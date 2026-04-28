@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TP53 p.C176S</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>TP53 p.C176S</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#confidence" target="_self" aria-label="Jump to Confidence">Confidence</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>TP53</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.C176S</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=resolved' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/resolved' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>TP53 p.Cys176Ser (C176S) lies in the DNA-binding domain at a Zn2+-coordination site (Cys176/His179/Cys238/Cys242) essential for structural integrity and DNA binding [<a href="#ref-1" class="ref-link" title="Structural Biology of the Tumor Suppressor p53">1</a>, <a href="#ref-2" class="ref-link" title="Structures of p53 Cancer Mutants and Mechanism of Rescue">2</a>]. Somatic occurrence and domain localization of TP53 C176S have been cataloged in curated oncology resources [<a href="#ref-6" class="ref-link" title="Somatic TP53 C176S | OncoKB">6</a>, <a href="#ref-7" class="ref-link" title="KEGG VARIANT: TP53 (C176S and other variants)">7</a>]. Within the mutation-centered 29-mer, our analysis identified two evidence-supported phosphosite windows: a gain of a central Ser at residue 176 (created by the mutation) and a known Ser183 site curated in phosphorylation databases [<a href="#ref-5" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotes">5</a>]. At the gene level, TP53 variants are linked to Li-Fraumeni syndrome, though clinical significance is variant-specific and should be interpreted with dedicated clinical resources [<a href="#ref-4" class="ref-link" title="Li-Fraumeni Syndrome - GeneReviews">4</a>].</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>TP53 p.C176S creates a new S176 phosphosite that is predicted to gain CDK12/13 recognition, rewiring p53–DNA damage response coupling in cancer</h3><p>TP53 p.C176S occurs in the DNA-binding domain Zn2+-coordination region that supports p53 structural integrity and DNA binding [<a href="#ref-1" class="ref-link" title="Structural Biology of the Tumor Suppressor p53">1</a>, <a href="#ref-2" class="ref-link" title="Structures of p53 Cancer Mutants and Mechanism of Rescue">2</a>]. The mutation creates a novel phospho-acceptor at center_pos S176 and is predicted to confer strong kinase-substrate specificity gains for transcriptional CDKs, particularly CDK12 (gain; Δ=0.858) and CDK13 (gain; Δ=0.866), at the S176-centered motif [<a href="#ref-5" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotes">5</a>]. Because CDK12/13 regulate RNA polymerase II elongation programs tightly linked to DNA damage response and genome stability, S176 phosphorylation (to be tested) could create an aberrant CDK12/13-dependent p53 regulatory node that alters p53-controlled DDR outputs and shifts replication-stress handling in tumors carrying TP53 C176S [<a href="#ref-3" class="ref-link" title="DNA damage response revisited: the p53 family and its regulators">3</a>, <a href="#ref-12" class="ref-link" title="Roles of CDK12/CDK13 and development of inhibitors and degraders">12</a>, <a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>]. This provides a mechanistically testable route by which a structural TP53 mutant could additionally acquire a context-specific, kinase-dependent gain-of-function or dominant-negative behavior under high transcription/replication stress common in cancers where TP53 C176S is observed [<a href="#ref-3" class="ref-link" title="DNA damage response revisited: the p53 family and its regulators">3</a>, <a href="#ref-6" class="ref-link" title="Somatic TP53 C176S | OncoKB">6</a>].</p><h4>Disease context</h4><ul><li>Somatic TP53 C176S–positive cancers (tumor types cataloged by OncoKB) [<a href="#ref-6" class="ref-link" title="Somatic TP53 C176S | OncoKB">6</a>]</li><li>Li-Fraumeni syndrome spectrum cancers (TP53-associated predisposition; variant-specific clinical interpretation required) [<a href="#ref-4" class="ref-link" title="Li-Fraumeni Syndrome - GeneReviews">4</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>176</strong></h4><p class='muted'>Mutation creates a new phosphosite at position 176 (S) [<a href="#ref-5" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotes">5</a>]</p><p class='muted'>Position: <strong>176</strong></p><figure class="card">  <figcaption><strong>176</strong></figcaption>  <pre class="codeblock">
+Positions:  169                                176                                183  
+Wildtype:   M    T    E    V    V    R    R    <span class="mut">C</span>    P    H    H    E    R    C    S    
+Mutant:     M    T    E    V    V    R    R    <span class="mut">S</span>    P    H    H    E    R    C    S    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>CDK13</td><td>0.00%</td><td>86.60%</td><td>+86.60%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>CDK12</td><td>0.00%</td><td>85.84%</td><td>+85.84%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>CDK9</td><td>0.00%</td><td>78.81%</td><td>+78.81%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div><h4>Predicted observations</h4><ul><li>Targeted phosphoproteomics (or a custom pS176 antibody) detects phosphorylation at TP53 S176 specifically in C176S-expressing cells but not TP53 WT, and the signal decreases upon CDK12/13 inhibition or degradation (directionality to be measured) [<a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>].</li><li>Compared with TP53 C176S, an isogenic TP53 C176S/S176A (phospho-null) line shows a distinct shift in p53 DDR output after DNA damage (e.g., altered induction of canonical p53 response markers such as p21/CDKN1A, apoptosis markers), discriminating structural-loss effects from the new phosphorylation-node effect [<a href="#ref-3" class="ref-link" title="DNA damage response revisited: the p53 family and its regulators">3</a>].</li><li>Cells expressing TP53 C176S display a selective dependency on CDK12/13 activity for a cancer-relevant phenotype (e.g., clonogenic survival under replication stress), and this dependency is reduced or lost in the C176S/S176A background (epistasis) [<a href="#ref-6" class="ref-link" title="Somatic TP53 C176S | OncoKB">6</a>, <a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>].</li></ul><details class='details' open><summary>Laboratory validation</summary><h4>Suggested models</h4><ul><li>TP53-null human cancer cell line (e.g., H1299) reconstituted with TP53 WT vs TP53 C176S vs TP53 C176S/S176A vs TP53 C176S/S176D (or S176E) constructs [<a href="#ref-6" class="ref-link" title="Somatic TP53 C176S | OncoKB">6</a>].</li><li>Cancer cell line endogenously harboring TP53 C176S (if available per OncoKB/cell line catalogs) with CRISPR correction to WT as an isogenic control [<a href="#ref-6" class="ref-link" title="Somatic TP53 C176S | OncoKB">6</a>].</li></ul><h4>Assays</h4><ul><li>Site phospho readout: PRM/SRM targeted MS for the S176-containing peptide (WT lacks this site) ± CDK12/13 inhibitor/degrader; optionally generate/validate a pS176 antibody using peptide competition [<a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>].</li><li>Kinase dependency: pharmacologic CDK12/13 perturbation (e.g., THZ531-class) or CRISPRi/siRNA of CDK12 and CDK13, measuring effects on S176 phosphorylation readout and on DDR phenotypes (γH2AX, cell-cycle profiles, apoptosis) [<a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>].</li><li>Epistasis/rescue: test whether S176A abolishes CDK12/13-perturbation sensitivity and whether phosphomimetic S176D/E partially restores it in the C176S background, tying site → kinase → phenotype causally [<a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>].</li></ul><h4>Controls and confounders</h4><ul><li>Control for altered p53 folding/DNA binding from Zn2+-coordination disruption by measuring DNA-binding activity and overall p53 stability across constructs to separate structural-loss from phospho-node effects [<a href="#ref-1" class="ref-link" title="Structural Biology of the Tumor Suppressor p53">1</a>, <a href="#ref-2" class="ref-link" title="Structures of p53 Cancer Mutants and Mechanism of Rescue">2</a>].</li><li>Include CDK9 perturbation as a specificity control since CDK9 is also predicted to gain recognition; distinguish CDK12/13-specific effects by using selective tools and/or combinatorial knockdowns [<a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>].</li><li>Normalize for p53 expression level and cellular localization across constructs to avoid artifactual phenotype differences [<a href="#ref-2" class="ref-link" title="Structures of p53 Cancer Mutants and Mechanism of Rescue">2</a>].</li></ul><h4>Feasibility notes</h4><p class='muted'>Because S176 is mutation-created, the most direct phospho readout is targeted MS for the mutant peptide, which avoids reliance on commercially unavailable site-specific antibodies and cleanly distinguishes WT vs C176S backgrounds [<a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>].</p></details><details class='details' open><summary>Limitations</summary><ul><li>Kinase events indicate predicted specificity rewiring, not confirmed phosphorylation; the direction and stoichiometry of S176 phosphorylation must be experimentally established [<a href="#ref-5" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotes">5</a>].</li><li>C176S likely perturbs p53 structure/DNA binding via Zn2+-coordination changes, which can dominate phenotypes and confound attribution to the new phosphosite without careful epistasis controls [<a href="#ref-1" class="ref-link" title="Structural Biology of the Tumor Suppressor p53">1</a>, <a href="#ref-2" class="ref-link" title="Structures of p53 Cancer Mutants and Mechanism of Rescue">2</a>].</li><li>Direct biochemical evidence that CDK12/13 phosphorylate p53 at S176 is not yet established and requires in vitro kinase assays and cellular dependency testing [<a href="#ref-13" class="ref-link" title="CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma">13</a>].</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><div class='chips'><span class='chip'>TP53</span><span class='chip'>CDK12</span><span class='chip'>CDK13</span></div><details class='details' open><summary>Group definitions</summary><div><div style='margin-bottom:12px'><strong>Group 1</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lung&#x27; and cell_type == &#x27;pulmonary alveolar type 2 cell&#x27; and disease == &#x27;lung adenocarcinoma&#x27;</li></ul></div><div style='margin-bottom:12px'><strong>Group 2</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lung&#x27; and cell_type == &#x27;pulmonary alveolar type 2 cell&#x27; and disease == &#x27;normal&#x27;</li></ul></div></div></details><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>CDK13</td><td>−0.235</td><td>−0.380</td><td>−68.8</td><td>9.25 &times; 10<sup>&minus;3</sup></td><td>2.73 &times; 10<sup>&minus;2</sup></td></tr><tr><td>CDK12</td><td>−0.125</td><td>−0.244</td><td>−35.0</td><td>1.82 &times; 10<sup>&minus;2</sup></td><td>2.73 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><div class='barrier'>Non-significant (p ≥ 0.05)</div><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>TP53</td><td>+0.003</td><td>0.009</td><td>0.9</td><td>5.33 &times; 10<sup>&minus;1</sup></td><td>5.33 &times; 10<sup>&minus;1</sup></td></tr></tbody></table></div><details class='details' open><summary>Interpretation</summary><h5>Context</h5><p>human lung, pulmonary alveolar type 2 cells, lung adenocarcinoma vs normal, primary data only</p><h5>Mechanistic expectations</h5><p>hypothesis is PTM-centric (CDK12/13 phosphorylation at mutant p53 S176); scRNA support would be neutral-to-higher CDK12/13 in tumor cells and adequate TP53 expression; explicit mRNA up/down is not required by the mechanism</p><h5>Observed results</h5><ul><li>CDK13 down in disease (logFC -0.235, d -0.380, q 0.027)</li><li>CDK12 down in disease (logFC -0.125, d -0.244, q 0.027)</li><li>TP53 unchanged (logFC ~0.003, d ~0.009, q ~0.53)</li></ul><h5>Alignment assessment</h5><ul><li>Kinase mRNA decreases in LUAD AT2 cells are non-trivial and do not provide positive support for a CDK12/13-driven gain-of-recognition mechanism</li><li>However, because the mechanism depends on kinase activity and mutant status rather than mRNA abundance, and TP53 mutation (C176S) is not annotated in these cells, these data cannot decisively refute the hypothesis</li></ul><h5>Conclusion</h5><ul><li>VERDICT = UNINFORMATIVE</li><li>The PTM-specific mechanism is not directly testable with scRNA; observed CDK12/13 downregulation in LUAD AT2 weakens support but does not constitute contradiction; confidence: low–medium</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="confidence" aria-label="Confidence">
+      <div class="section-h">
+        <h2>Confidence</h2>
+      </div>
+      <p class="section-desc muted">Confidence level assigned to each hypothesis in this report.</p>
+      <article class='card'><p><strong>TP53 p.C176S creates a new S176 phosphosite that is predicted to gain CDK12/13 recognition, rewiring p53–DNA damage response coupling in cancer [OncoKBC176S, EMM2022DDRReview]</strong></p><p>Confidence: <strong>medium</strong></p></article>
+    </section>
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://www.annualreviews.org/doi/pdf/10.1146/annurev.biochem.77.060806.091238' target='_blank' rel='noopener'>Structural Biology of the Tumor Suppressor p53</a></p><p class='muted'>Comprehensive review of p53 structural biology, including the DNA-binding domain and its Zn2+ coordination by Cys176, His179, Cys238, and Cys242.</p><p class='muted' style='margin-top:6px'>ID: <code>JoergerFersht2008ARB</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://www.jbc.org/article/S0021-9258(20)69281-X/pdf' target='_blank' rel='noopener'>Structures of p53 Cancer Mutants and Mechanism of Rescue</a></p><p class='muted'>Structural work on p53 DNA-binding domain mutants and rescue mechanisms; emphasizes the critical role of the Zn2+-binding motif for structural integrity.</p><p class='muted' style='margin-top:6px'>ID: <code>Liu2020JBC</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://www.nature.com/articles/s12276-022-00863-4' target='_blank' rel='noopener'>DNA damage response revisited: the p53 family and its regulators</a></p><p class='muted'>Review of p53 family roles in the DNA damage response and stress signaling.</p><p class='muted' style='margin-top:6px'>ID: <code>EMM2022DDRReview</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://www.ncbi.nlm.nih.gov/books/NBK1311/' target='_blank' rel='noopener'>Li-Fraumeni Syndrome - GeneReviews</a></p><p class='muted'>Clinical overview of Li-Fraumeni syndrome and TP53-associated cancer risks, surveillance, and genetics.</p><p class='muted' style='margin-top:6px'>ID: <code>GeneReviewsTP53</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/40581078/' target='_blank' rel='noopener'>EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotes</a></p><p class='muted'>Updated phosphorylation site database aggregating experimentally supported phosphosites across eukaryotes.</p><p class='muted' style='margin-top:6px'>ID: <code>EPSD2024GPB</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://www.oncokb.org/gene/TP53/C176S' target='_blank' rel='noopener'>Somatic TP53 C176S | OncoKB</a></p><p class='muted'>OncoKB entry noting TP53 C176S as a somatic variant located in the DNA-binding domain with occurrences in specific tumor types.</p><p class='muted' style='margin-top:6px'>ID: <code>OncoKBC176S</code></p></article><article class='card' id='ref-7'><p><strong>[7]</strong> <a href='https://www.genome.jp/dbget-bin/www_bget?hsa_var:7157v1' target='_blank' rel='noopener'>KEGG VARIANT: TP53 (C176S and other variants)</a></p><p class='muted'>KEGG variant entry listing TP53 mutations including C176S with cross-references.</p><p class='muted' style='margin-top:6px'>ID: <code>KEGGVarTP53</code></p></article><article class='card' id='ref-8'><p><strong>[8]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/' target='_blank' rel='noopener'>Aggregation of zinc-free p53 is inhibited by Hsp90 but not other chaperones</a></p><p class='muted'>Demonstrates the importance of Zn2+ for p53 DBD stability and shows Hsp90 can inhibit aggregation of zinc-free p53.</p><p class='muted' style='margin-top:6px'>ID: <code>ProteinSci2011Hsp90</code></p></article><article class='card' id='ref-9'><p><strong>[9]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/12007217/' target='_blank' rel='noopener'>The IARC TP53 database: new online mutation analysis</a></p><p class='muted'>Describes the IARC TP53 database compiling TP53 variants in tumors and populations.</p><p class='muted' style='margin-top:6px'>ID: <code>IARCTP53Database</code></p></article><article class='card' id='ref-10'><p><strong>[10]</strong> <a href='https://www.ncbi.nlm.nih.gov/clinvar/variation/VCV000186451' target='_blank' rel='noopener'>VCV000186451 (TP53 p.Cys176Tyr) - ClinVar</a></p><p class='muted'>ClinVar record for a different substitution at residue 176 (Cys176Tyr); illustrates clinical annotations at the zinc-binding site.</p><p class='muted' style='margin-top:6px'>ID: <code>ClinVarVCV186451</code></p></article><article class='card' id='ref-11'><p><strong>[11]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC13106391/' target='_blank' rel='noopener'>Integrated molecular dynamics elucidation of TP53 H179 zinc-binding variants</a></p><p class='muted'>Computational study emphasizing the functional importance of the p53 zinc-binding motif, including H179.</p><p class='muted' style='margin-top:6px'>ID: <code>FrontBioinfH1792023</code></p></article><article class='card' id='ref-12'><p><strong>[12]</strong> Roles of CDK12/CDK13 and development of inhibitors and degraders</p><p class='muted' style='margin-top:6px'>ID: <code>PMID:query_pubmed_CDK12CDK13_1</code></p></article><article class='card' id='ref-13'><p><strong>[13]</strong> CDK12/CDK13 inhibition disrupts transcriptional elongation and replication fork progression in glioblastoma</p><p class='muted' style='margin-top:6px'>ID: <code>PMID:query_pubmed_CDK12CDK13_2</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>
