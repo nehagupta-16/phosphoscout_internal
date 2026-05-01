@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BRAF p.P334S</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>BRAF p.P334S</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#confidence" target="_self" aria-label="Jump to Confidence">Confidence</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>BRAF</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.P334S</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=P15056' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/P15056' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>BRAF p.P334S (PRO334SER) is a missense variant in BRAF, a RAF-family serine/threonine kinase that drives MAPK/ERK signaling in cancer biology [<a href="#ref-1" class="ref-link" title="BRAF B-Raf proto-oncogene, serine/threonine kinase [Homo sapiens] – NCBI Gene">1</a>, <a href="#ref-2" class="ref-link" title="BRAF in malignant melanoma progression and metastasis">2</a>]. The P334S variant has been reported in a melanoma patient-derived xenograft cohort and was annotated with a high FATHMM pathogenicity score (0.93) in that study’s supplemental data [<a href="#ref-3" class="ref-link" title="Metastatic Melanoma Patient-Derived Xenografts Respond to MDM2 Inhibition as a Single Agent or in Combination with BRAF/MEK Inhibition">3</a>]. Within the 29-mer centered on residue 334, multiple experimentally observed phosphosites are cataloged in EPSD, and the mutation introduces a serine at position 334 in a serine-rich local context [<a href="#ref-5" class="ref-link" title="EPSD: Eukaryotic Phosphorylation Sites Database">5</a>, <a href="#ref-6" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">6</a>]. AlphaFold-based relative solvent accessibility assessment indicates the central ±3 residues are exposed (RSA ≥ 0.1), supporting phosphorylation feasibility in this region [<a href="#ref-7" class="ref-link" title="Highly accurate protein structure prediction with AlphaFold">7</a>].</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>BRAF p.P334S creates a novel S334 site with predicted NEK2/NEK3 gain that reprograms BRAF hinge-region phospho-regulation to favor melanoma cell-cycle fitness and therapy tolerance</h3><p>BRAF p.P334S introduces a new serine phospho-acceptor at center_pos S334 within a serine-rich hinge-proximal segment and is predicted to create a strong kinase specificity gain for NEK2 and NEK3 at this new site (S334; gain events) [<a href="#ref-1" class="ref-link" title="BRAF B-Raf proto-oncogene, serine/threonine kinase [Homo sapiens] – NCBI Gene">1</a>]. Because BRAF hinge-region phosphorylation clusters can function as negative regulators of BRAF signaling output, rewiring phosphorylation within this broader regulatory region could shift BRAF’s autoinhibition/dimer-context regulation and thereby alter downstream MAPK pathway behavior in a way relevant to melanoma biology (prediction to be tested with phospho readouts, not assumed) [<a href="#ref-1" class="ref-link" title="BRAF B-Raf proto-oncogene, serine/threonine kinase [Homo sapiens] – NCBI Gene">1</a>, <a href="#ref-2" class="ref-link" title="BRAF in malignant melanoma progression and metastasis">2</a>, <a href="#ref-8" class="ref-link" title="Phospho-proteomic analyses of B-Raf protein complexes reveal new regulatory principles">8</a>]. NEK2 is linked to aggressive melanoma biology and poor outcomes, so a mutation-created NEK2-addressable site on BRAF could provide a mechanistic bridge between altered BRAF regulation and melanoma cell-cycle fitness/therapy tolerance (testable as NEK2-dependence of the P334S phenotype) [<a href="#ref-3" class="ref-link" title="Metastatic Melanoma Patient-Derived Xenografts Respond to MDM2 Inhibition as a Single Agent or in Combination with BRAF/MEK Inhibition">3</a>, <a href="#ref-9" class="ref-link" title="Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma">9</a>].</p><h4>Disease context</h4><ul><li>Cutaneous melanoma (SKCM) [<a href="#ref-2" class="ref-link" title="BRAF in malignant melanoma progression and metastasis">2</a>, <a href="#ref-3" class="ref-link" title="Metastatic Melanoma Patient-Derived Xenografts Respond to MDM2 Inhibition as a Single Agent or in Combination with BRAF/MEK Inhibition">3</a>, <a href="#ref-9" class="ref-link" title="Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma">9</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>334</strong></h4><p class='muted'>Mutation creates a new phosphosite at position 334 (S)</p><p class='muted'>Position: <strong>334</strong></p><figure class="card">  <figcaption><strong>334</strong></figcaption>  <pre class="codeblock">
+Positions:  327                                334                                341  
+Wildtype:   G    P    Q    I    L    T    S    <span class="mut">P</span>    S    P    S    K    S    I    P    
+Mutant:     G    P    Q    I    L    T    S    <span class="mut">S</span>    S    P    S    K    S    I    P    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>NEK2</td><td>0.00%</td><td>68.69%</td><td>+68.69%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>NEK3</td><td>0.00%</td><td>63.28%</td><td>+63.28%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div><h4>Predicted observations</h4><ul><li>Targeted phosphoproteomics (PRM/SRM) detects phosphorylation on BRAF at S334 specifically/strongly in the p.P334S background, and this signal decreases upon NEK2 inhibition or NEK2 knockdown (directionality to be empirically determined) [<a href="#ref-1" class="ref-link" title="BRAF B-Raf proto-oncogene, serine/threonine kinase [Homo sapiens] – NCBI Gene">1</a>, <a href="#ref-9" class="ref-link" title="Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma">9</a>].</li><li>Compared with BRAF-WT, BRAF p.P334S cells show an altered MAPK pathway response profile (e.g., different pMEK/pERK dynamics after growth factor stimulation or under BRAF/MEK inhibitor exposure), consistent with hinge-proximal regulatory rewiring (to be tested experimentally, not assumed) [<a href="#ref-2" class="ref-link" title="BRAF in malignant melanoma progression and metastasis">2</a>, <a href="#ref-3" class="ref-link" title="Metastatic Melanoma Patient-Derived Xenografts Respond to MDM2 Inhibition as a Single Agent or in Combination with BRAF/MEK Inhibition">3</a>, <a href="#ref-8" class="ref-link" title="Phospho-proteomic analyses of B-Raf protein complexes reveal new regulatory principles">8</a>].</li><li>Mechanism-discriminating dependency shift: proliferative advantage or drug-tolerance phenotype conferred by BRAF p.P334S is selectively reduced by NEK2 perturbation more than in BRAF-WT controls, indicating a new NEK2-dependent axis created by the mutation [<a href="#ref-3" class="ref-link" title="Metastatic Melanoma Patient-Derived Xenografts Respond to MDM2 Inhibition as a Single Agent or in Combination with BRAF/MEK Inhibition">3</a>, <a href="#ref-9" class="ref-link" title="Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma">9</a>].</li></ul><details class='details' open><summary>Laboratory validation</summary><h4>Suggested models</h4><ul><li>Isogenic melanoma cell lines engineered to express BRAF-WT vs BRAF-P334S at matched levels (CRISPR knock-in or doxy-inducible cDNA) [<a href="#ref-2" class="ref-link" title="BRAF in malignant melanoma progression and metastasis">2</a>].</li><li>A melanoma patient-derived xenograft-derived cell model matching the cohort context where p.P334S was observed (if available) [<a href="#ref-3" class="ref-link" title="Metastatic Melanoma Patient-Derived Xenografts Respond to MDM2 Inhibition as a Single Agent or in Combination with BRAF/MEK Inhibition">3</a>].</li></ul><h4>Assays</h4><ul><li>Site causality: generate BRAF-P334S/S334A (phospho-null) and BRAF-P334S/S334D or S334E (phosphomimetic proxy) and measure effects on MAPK signaling markers (pMEK, pERK) and growth/drug response [<a href="#ref-2" class="ref-link" title="BRAF in malignant melanoma progression and metastasis">2</a>, <a href="#ref-8" class="ref-link" title="Phospho-proteomic analyses of B-Raf protein complexes reveal new regulatory principles">8</a>].</li><li>Kinase dependency: pharmacologic NEK2 inhibition and/or NEK2 CRISPRi/siRNA in BRAF-WT vs BRAF-P334S backgrounds, measuring (i) S334 phospho-occupancy by targeted MS and (ii) cell-cycle/viability/drug-tolerance phenotypes [<a href="#ref-9" class="ref-link" title="Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma">9</a>].</li><li>Epistasis/rescue: test whether S334A abolishes the NEK2-perturbation sensitivity seen in P334S cells (site upstream of kinase effect), and whether re-expression of inhibitor-resistant NEK2 (or NEK2 overexpression) restores the S334 phospho-signal and phenotype only when S334 is present (P334S but not S334A) [<a href="#ref-9" class="ref-link" title="Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma">9</a>].</li></ul><h4>Controls and confounders</h4><ul><li>Control for BRAF expression level and dimerization state, since altered BRAF abundance or dimer propensity can confound signaling phenotypes [<a href="#ref-2" class="ref-link" title="BRAF in malignant melanoma progression and metastasis">2</a>, <a href="#ref-8" class="ref-link" title="Phospho-proteomic analyses of B-Raf protein complexes reveal new regulatory principles">8</a>].</li><li>Use a kinase-dead BRAF control to distinguish effects mediated by BRAF catalytic output vs scaffold/regulatory effects (interpretation anchored to MAPK pathway readouts) [<a href="#ref-2" class="ref-link" title="BRAF in malignant melanoma progression and metastasis">2</a>].</li><li>Include an unrelated NEK-family inhibitor/control to assess specificity of NEK2 dependence vs broad mitotic kinase suppression [<a href="#ref-9" class="ref-link" title="Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma">9</a>].</li></ul><h4>Feasibility notes</h4><p class='muted'>If no phospho-specific antibody exists for pS334, PRM/SRM targeted MS on a tryptic peptide spanning S334 is the most direct readout for testing phosphorylation directionality and NEK2 dependence [<a href="#ref-8" class="ref-link" title="Phospho-proteomic analyses of B-Raf protein complexes reveal new regulatory principles">8</a>].</p></details><details class='details' open><summary>Limitations</summary><ul><li>The NEK2/NEK3 effects are predicted kinase–substrate specificity changes at S334, not measured phosphorylation; phosphorylation at S334 and its direction must be validated by targeted phospho readouts [<a href="#ref-1" class="ref-link" title="BRAF B-Raf proto-oncogene, serine/threonine kinase [Homo sapiens] – NCBI Gene">1</a>].</li><li>Direct biochemical evidence that NEK2 (or NEK3) phosphorylates BRAF at S334 is not yet established and requires in vitro kinase assays and cellular dependency tests [<a href="#ref-9" class="ref-link" title="Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma">9</a>].</li><li>The cited hinge-region regulatory phosphorylation literature focuses on other hinge clusters (e.g., around T401/S419), so extrapolation to the 332–337 region is mechanistic inference that must be experimentally confirmed [<a href="#ref-8" class="ref-link" title="Phospho-proteomic analyses of B-Raf protein complexes reveal new regulatory principles">8</a>].</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><div class='chips'><span class='chip'>BRAF</span><span class='chip'>NEK2</span><span class='chip'>NEK3</span></div><details class='details' open><summary>Group definitions</summary><div><div style='margin-bottom:12px'><strong>Group 1</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;skin of body&#x27; and disease == &#x27;melanoma&#x27;</li></ul></div><div style='margin-bottom:12px'><strong>Group 2</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;skin of body&#x27; and disease == &#x27;normal&#x27;</li></ul></div></div></details><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>BRAF</td><td>+0.112</td><td>0.309</td><td>32.2</td><td>1.98 &times; 10<sup>&minus;2</sup></td><td>3.48 &times; 10<sup>&minus;2</sup></td></tr><tr><td>NEK2</td><td>+0.057</td><td>0.451</td><td>27.4</td><td>2.32 &times; 10<sup>&minus;2</sup></td><td>3.48 &times; 10<sup>&minus;2</sup></td></tr><tr><td>NEK3</td><td>+0.038</td><td>0.170</td><td>17.9</td><td>3.55 &times; 10<sup>&minus;2</sup></td><td>3.55 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><details class='details' open><summary>Interpretation</summary><h5>Context</h5><ul><li>Tissue+disease-only fallback in skin of body (melanoma vs normal), all cell types included</li><li>Hypothesis genes: BRAF (substrate), NEK2/NEK3 (kinases)</li><li>Mechanism is PTM-centric but predicts kinase/substrate activity that could track with mRNA up in melanoma</li></ul><h5>Mechanistic expectations</h5><ul><li>If NEK2/NEK3-mediated phosphorylation of BRAF promotes melanoma fitness, tumor contexts may show higher NEK2/NEK3 and possibly BRAF mRNA</li><li>Directional expectation: up in melanoma</li></ul><h5>Observed results (log2FC melanoma/normal, q)</h5><ul><li>BRAF: log2FC=+0.112, effect_size=0.309, q=0.035 (passes non-trivial threshold)</li><li>NEK2: log2FC=+0.057, effect_size=0.451, q=0.035 (non-trivial by effect size)</li><li>NEK3: log2FC=+0.038, effect_size=0.170, q=0.035 (non-trivial by effect size)</li></ul><h5>Alignment assessment</h5><ul><li>All three genes trend higher in melanoma with acceptable q-values; BRAF and NEK2 show non-trivial magnitude by recommended thresholds</li><li>Co-upward shift of kinase (NEK2/NEK3) and substrate (BRAF) is directionally consistent with a gain-of-function phosphorylation program</li><li>Caveat: comparison aggregates across many skin cell types (diseased dominated by malignant cells; normal has diverse stromal/immune/melanocytes), so signal may reflect composition as well as within-cell-type regulation; PTM mechanism does not require mRNA change</li></ul><h5>Conclusion</h5><ul><li>SUPPORTS</li><li>Modest but coherent upregulation of BRAF, NEK2, and NEK3 in melanoma supports the proposed NEK2/NEK3→BRAF pro-tumor signaling axis; confidence low–medium due to fallback aggregation and PTM-centric mechanism.</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="confidence" aria-label="Confidence">
+      <div class="section-h">
+        <h2>Confidence</h2>
+      </div>
+      <p class="section-desc muted">Confidence level assigned to each hypothesis in this report.</p>
+      <article class='card'><p><strong>BRAF p.P334S creates a novel S334 site with predicted NEK2/NEK3 gain that reprograms BRAF hinge-region phospho-regulation to favor melanoma cell-cycle fitness and therapy tolerance [PMC7191094, CCR2020MDM2PDX, PMID_NEK2_Melanoma_Prognosis]</strong></p><p>Confidence: <strong>medium</strong></p></article>
+    </section>
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://www.ncbi.nlm.nih.gov/gene/673' target='_blank' rel='noopener'>BRAF B-Raf proto-oncogene, serine/threonine kinase [Homo sapiens] – NCBI Gene</a></p><p class='muted'>NCBI Gene summary for BRAF describing its role as a RAF family serine/threonine kinase in MAPK/ERK signaling and disease relevance.</p><p class='muted' style='margin-top:6px'>ID: <code>NCBIGene673</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC7191094/' target='_blank' rel='noopener'>BRAF in malignant melanoma progression and metastasis</a></p><p class='muted'>Review of BRAF biology, regulation, and its role in melanoma progression, including MAPK pathway signaling and therapeutic implications.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC7191094</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://aacrjournals.org/clincancerres/article/26/14/3803/10147/Metastatic-Melanoma-Patient-Derived-Xenografts' target='_blank' rel='noopener'>Metastatic Melanoma Patient-Derived Xenografts Respond to MDM2 Inhibition as a Single Agent or in Combination with BRAF/MEK Inhibition</a></p><p class='muted'>PDX study of melanoma response to MDM2 inhibition; supplemental mutation data note a BRAF P334S variant with high FATHMM pathogenic score.</p><p class='muted' style='margin-top:6px'>ID: <code>CCR2020MDM2PDX</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC7054294/' target='_blank' rel='noopener'>Drug responses are conserved across patient-derived xenograft models of BRAF-mutant melanoma</a></p><p class='muted'>Describes a PDX library of BRAF-mutant melanoma and conserved drug response patterns relevant to RAF/MEK pathway inhibition.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC7054294</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://epsd.biocuckoo.cn/' target='_blank' rel='noopener'>EPSD: Eukaryotic Phosphorylation Sites Database</a></p><p class='muted'>Online database curating experimentally identified phosphorylation sites across eukaryotic proteins.</p><p class='muted' style='margin-top:6px'>ID: <code>EPSD_Website</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC12448286/' target='_blank' rel='noopener'>EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species</a></p><p class='muted'>Describes the large-scale curated EPSD 2.0 dataset of experimentally supported phosphorylation sites and functional annotations.</p><p class='muted' style='margin-top:6px'>ID: <code>Chen2025EPSD_PMC</code></p></article><article class='card' id='ref-7'><p><strong>[7]</strong> <a href='https://www.nature.com/articles/s41586-021-03819-2' target='_blank' rel='noopener'>Highly accurate protein structure prediction with AlphaFold</a></p><p class='muted'>AlphaFold method paper; provides the basis for structural models used to assess residue solvent accessibility.</p><p class='muted' style='margin-top:6px'>ID: <code>Jumper2021Nature</code></p></article><article class='card' id='ref-8'><p><strong>[8]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/' target='_blank' rel='noopener'>Phospho-proteomic analyses of B-Raf protein complexes reveal new regulatory principles</a></p><p class='muted' style='margin-top:6px'>ID: <code>PMID_BRAF_HingeCluster_Oncotarget</code></p></article><article class='card' id='ref-9'><p><strong>[9]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/' target='_blank' rel='noopener'>Aberrant NEK2 expression might be an independent predictor for poor recurrence-free survival and overall survival of skin cutaneous melanoma</a></p><p class='muted' style='margin-top:6px'>ID: <code>PMID_NEK2_Melanoma_Prognosis</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>
