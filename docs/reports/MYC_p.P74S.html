@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MYC p.P74S</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>MYC p.P74S</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#confidence" target="_self" aria-label="Jump to Confidence">Confidence</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>MYC</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.P74S</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=P01106' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/P01106' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>MYC p.P74S (PRO74SER) resides in the N‑terminal transactivation domain of c‑Myc, a region critical for transcriptional regulation and oncogenic function [<a href="#ref-4" class="ref-link" title="Myc proto-oncogene protein (Human) – UniProt P01106">4</a>]. The variant is cataloged as a somatic mutation in oncology knowledgebases and has been observed in a relapsed/refractory aggressive B‑cell lymphoma case report [<a href="#ref-1" class="ref-link" title="Somatic MYC P74S | OncoKB™">1</a>, <a href="#ref-2" class="ref-link" title="Childhood and Adolescent Relapsed/Refractory Aggressive B-Cell ...">2</a>]. The surrounding N‑terminal region harbors multiple experimentally annotated phosphosites, and within the analyzed 29‑mer, EPSD documents S73, S77, and S79 as phosphosites proximal to the P74 position [<a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">7</a>]. Reviews of MYC biology emphasize that phosphorylation within the N‑terminus contributes to MYC’s regulation of proliferation and apoptosis, underscoring the functional relevance of phosphosite changes in this region [<a href="#ref-5" class="ref-link" title="The MYC transcription factor network: balancing metabolism, proliferation and oncogenesis">5</a>, <a href="#ref-6" class="ref-link" title="MYC function and regulation in physiological perspective">6</a>].</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>MYC p.P74S creates a new CDK/MAPK/GSK3-recognized phospho-degron at S74 that functionally competes with canonical MYC MB1 degron control, increasing MYC oncogenic output in aggressive B-cell lymphoma</h3><p>The MYC p.P74S substitution creates a new serine phospho-acceptor at center_pos S74 within the N-terminal transactivation/Myc Box region of MYC [<a href="#ref-4" class="ref-link" title="Myc proto-oncogene protein (Human) – UniProt P01106">4</a>, <a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">7</a>]. Kinase–substrate specificity is predicted to be strongly rewired toward gain of recognition at S74 by multiple proline-directed kinases including CDK2/CDK7/CDK9 and MAPK1/ERK2 (all gains), and also by GSK3A/GSK3B (gains), relative to wildtype where S74 does not exist [<a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">7</a>]. Because MYC turnover and transactivation are regulated by phosphorylation-dependent degron logic in the nearby N-terminus that interfaces with SCF ubiquitin ligases (including FBW7-mediated degradation driven by phospho-degron recognition) [<a href="#ref-8" class="ref-link" title="Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7">8</a>], the new predicted S74 phospho-degron could (testably) reroute which kinases “license” MYC for ubiquitin-mediated proteolysis versus sustained transcriptional activity, thereby promoting MYC-driven proliferation programs in aggressive B-cell lymphoma where this variant has been observed [<a href="#ref-1" class="ref-link" title="Somatic MYC P74S | OncoKB™">1</a>, <a href="#ref-2" class="ref-link" title="Childhood and Adolescent Relapsed/Refractory Aggressive B-Cell ...">2</a>].</p><h4>Disease context</h4><ul><li>Relapsed/refractory aggressive B-cell lymphoma (observed case context) [<a href="#ref-2" class="ref-link" title="Childhood and Adolescent Relapsed/Refractory Aggressive B-Cell ...">2</a>]</li><li>Cancer contexts with aberrant MYC activity (broader relevance) [<a href="#ref-3" class="ref-link" title="MYC activity inference captures diverse mechanisms of aberrant MYC activity across cancers">3</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>74</strong></h4><p class='muted'>Mutation creates a new phosphosite at position 74 (S)</p><p class='muted'>Position: <strong>74</strong></p><figure class="card">  <figcaption><strong>74</strong></figcaption>  <pre class="codeblock">
+Positions:  67                                 74                                 81   
+Wildtype:   K    F    E    L    L    P    T    <span class="mut">P</span>    P    L    S    P    S    R    R    
+Mutant:     K    F    E    L    L    P    T    <span class="mut">S</span>    P    L    S    P    S    R    R    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>MAPK1</td><td>0.00%</td><td>97.02%</td><td>+97.02%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>CDK7</td><td>0.00%</td><td>96.44%</td><td>+96.44%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>CDK2</td><td>0.00%</td><td>94.95%</td><td>+94.95%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>CDK9</td><td>0.00%</td><td>93.69%</td><td>+93.69%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>GSK3B</td><td>0.00%</td><td>81.41%</td><td>+81.41%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div><h4>Predicted observations</h4><ul><li>Phospho-readout: targeted PRM/SRM mass spectrometry detects phosphorylation on the new site pS74 in MYC p.P74S but not in MYC WT, with site localization confidence sufficient to distinguish pS74 from nearby pS73/pS77/pS79 [<a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">7</a>].</li><li>Kinase dependency shift: acute inhibition/knockdown of CDK7 or CDK9 reduces the pS74 signal more strongly in p.P74S cells than in WT cells (directionality to be empirically determined) [<a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">7</a>].</li><li>Mechanism-discriminating readout: compared with WT MYC, p.P74S shows altered MYC protein half-life and/or altered FBW7 co-immunoprecipitation in a manner that is specifically lost when S74 is reverted/ablated (P74S/S74A) (direction to be tested) [<a href="#ref-8" class="ref-link" title="Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7">8</a>].</li><li>Downstream phenotype: in lymphoma-relevant cells, p.P74S increases MYC-dependent transcriptional output and proliferation that is selectively blunted by S74A editing or by the kinase perturbation that most strongly controls pS74 (CDK7/CDK9 vs MAPK1 vs GSK3), enabling pathway attribution [<a href="#ref-2" class="ref-link" title="Childhood and Adolescent Relapsed/Refractory Aggressive B-Cell ...">2</a>, <a href="#ref-5" class="ref-link" title="The MYC transcription factor network: balancing metabolism, proliferation and oncogenesis">5</a>, <a href="#ref-8" class="ref-link" title="Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7">8</a>].</li></ul><details class='details' open><summary>Laboratory validation</summary><h4>Suggested models</h4><ul><li>Aggressive B-cell lymphoma cell lines with high MYC activity (engineered knock-in of MYC p.P74S at the endogenous locus) [<a href="#ref-2" class="ref-link" title="Childhood and Adolescent Relapsed/Refractory Aggressive B-Cell ...">2</a>, <a href="#ref-5" class="ref-link" title="The MYC transcription factor network: balancing metabolism, proliferation and oncogenesis">5</a>].</li><li>Isogenic HEK293T or similar tractable lines expressing MYC WT vs p.P74S from the same promoter for mechanistic biochemistry (FBW7 binding, half-life) [<a href="#ref-8" class="ref-link" title="Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7">8</a>].</li></ul><h4>Assays</h4><ul><li>Generate isogenic variants: MYC WT, MYC p.P74S, and MYC p.P74S/S74A (site-dead) (plus optional S74D/E phosphomimetic) and confirm comparable MYC expression [<a href="#ref-4" class="ref-link" title="Myc proto-oncogene protein (Human) – UniProt P01106">4</a>].</li><li>Phosphosite measurement: targeted phosphoproteomics (PRM) for pS74 and nearby sites (pS73/pS77/pS79) to establish whether S74 is phosphorylated and whether local phosphorylation patterns shift (directionality measured, not assumed) [<a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">7</a>].</li><li>Kinase perturbation: treat with selective CDK7 and CDK9 inhibitors and/or CRISPRi/siRNA of CDK7/CDK9; measure effects on pS74 and on MYC half-life and MYC target transcription [<a href="#ref-5" class="ref-link" title="The MYC transcription factor network: balancing metabolism, proliferation and oncogenesis">5</a>, <a href="#ref-8" class="ref-link" title="Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7">8</a>].</li><li>Ubiquitin–proteasome axis test: assess MYC ubiquitination and MYC–FBW7 interaction by co-IP ± proteasome inhibitor, and test epistasis by FBW7 knockdown; determine whether any p.P74S phenotype is FBW7-dependent and S74-dependent (rescue/epistasis) [<a href="#ref-8" class="ref-link" title="Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7">8</a>].</li></ul><h4>Controls and confounders</h4><ul><li>Confirm that any inhibitor effects are not due to global transcription shutdown by measuring short-lived control transcripts/proteins and normalizing to MYC mRNA where appropriate [<a href="#ref-5" class="ref-link" title="The MYC transcription factor network: balancing metabolism, proliferation and oncogenesis">5</a>].</li><li>Include MYC P74S with S74A as the key causal control to attribute phenotypes to the new phosphosite rather than other local structural effects [<a href="#ref-4" class="ref-link" title="Myc proto-oncogene protein (Human) – UniProt P01106">4</a>].</li><li>Measure phosphorylation at canonical MYC degron sites (e.g., Thr58/Ser62) in parallel by phospho-specific immunoblot or MS to distinguish ‘new S74 phospho-degron’ effects from canonical MB1 regulation [<a href="#ref-8" class="ref-link" title="Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7">8</a>].</li></ul><h4>Feasibility notes</h4><p class='muted'>A pS74-specific antibody may not exist; MS-based targeted quantification is the primary phospho readout, with antibody development as a follow-on if the site is validated [<a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">7</a>].</p></details><details class='details' open><summary>Limitations</summary><ul><li>Kinase-event outputs represent predicted kinase recognition rewiring, not measured phosphorylation occupancy at S74; phosphorylation directionality and magnitude require phospho-proteomic validation [<a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species">7</a>].</li><li>FBW7 recognition is established for MYC via a defined phospho-degron logic, but whether the new S74 site forms a functional degron or interferes with existing degron processing is unproven and could be context-dependent [<a href="#ref-8" class="ref-link" title="Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7">8</a>].</li><li>Disease linkage is currently supported by a case observation and knowledgebase cataloging rather than a cohort-level statistical association for P74S specifically [<a href="#ref-1" class="ref-link" title="Somatic MYC P74S | OncoKB™">1</a>, <a href="#ref-2" class="ref-link" title="Childhood and Adolescent Relapsed/Refractory Aggressive B-Cell ...">2</a>].</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><div class='chips'><span class='chip'>MYC</span><span class='chip'>CDK2</span><span class='chip'>CDK7</span><span class='chip'>CDK9</span><span class='chip'>MAPK1</span><span class='chip'>GSK3B</span></div><details class='details' open><summary>Group definitions</summary><div><div style='margin-bottom:12px'><strong>Group 1</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lymph node&#x27; and cell_type in [&#x27;malignant cell&#x27;,&#x27;germinal center B cell&#x27;] and disease == &#x27;diffuse large B-cell lymphoma&#x27;</li></ul></div><div style='margin-bottom:12px'><strong>Group 2</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lymph node&#x27; and cell_type in [&#x27;malignant cell&#x27;,&#x27;germinal center B cell&#x27;] and disease == &#x27;normal&#x27;</li></ul></div></div></details><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>MYC</td><td>+0.254</td><td>0.275</td><td>12.5</td><td>6.31 &times; 10<sup>&minus;10</sup></td><td>3.79 &times; 10<sup>&minus;9</sup></td></tr><tr><td>MAPK1</td><td>+0.213</td><td>0.258</td><td>11.8</td><td>1.83 &times; 10<sup>&minus;7</sup></td><td>5.48 &times; 10<sup>&minus;7</sup></td></tr><tr><td>CDK9</td><td>+0.256</td><td>0.330</td><td>17.5</td><td>2.26 &times; 10<sup>&minus;5</sup></td><td>4.53 &times; 10<sup>&minus;5</sup></td></tr><tr><td>GSK3B</td><td>+0.140</td><td>0.188</td><td>8.4</td><td>3.67 &times; 10<sup>&minus;5</sup></td><td>5.50 &times; 10<sup>&minus;5</sup></td></tr></tbody></table></div><div class='barrier'>Non-significant (p ≥ 0.05)</div><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>CDK2</td><td>+0.003</td><td>0.005</td><td>0.2</td><td>8.59 &times; 10<sup>&minus;1</sup></td><td>9.64 &times; 10<sup>&minus;1</sup></td></tr><tr><td>CDK7</td><td>+0.001</td><td>0.001</td><td>0.1</td><td>9.64 &times; 10<sup>&minus;1</sup></td><td>9.64 &times; 10<sup>&minus;1</sup></td></tr></tbody></table></div><details class='details' open><summary>Interpretation</summary><h5>Context</h5><p>lymph node malignant/GC B cell comparison, DLBCL vs normal (log2[DLBCL/normal])</p><h5>Mechanistic expectations</h5><p>P74S adds S74 phospho-acceptor, rewiring to CDK2/7/9, MAPK1(ERK2), GSK3B; predicted to increase MYC stability/activity → higher MYC transcriptional output; kinase mRNA may also trend up</p><h5>Observed results</h5><ul><li>MYC +0.254 log2FC, ES 0.275, q=3.8e-9 (higher in DLBCL)</li><li>CDK9 +0.256, ES 0.330, q=4.5e-5 (up)</li><li>MAPK1 +0.213, ES 0.258, q=5.5e-7 (up)</li><li>GSK3B +0.140, ES 0.188, q=5.5e-5 (up)</li><li>CDK2 ~0.003, q=0.96 (no change)</li><li>CDK7 ~0.001, q=0.96 (no change)</li></ul><h5>Alignment assessment</h5><p>Coordinated upregulation of MYC and several predicted kinases (CDK9, MAPK1, GSK3B) with non-trivial effect sizes and strong q-values supports a higher MYC transcriptional state in DLBCL; lack of CDK2/7 mRNA change does not contradict PTM-centric mechanism; signals derived from malignant vs normal GC B baseline are biologically plausible for lymphoma</p><h5>Conclusion</h5><p>SUPPORTS — scRNA patterns are consistent with the proposed kinase–MYC rewiring increasing MYC oncogenic output in aggressive B-cell lymphoma; confidence: medium (PTM mechanism inferred from mRNA; mixed cell-type aggregation)</p></details></article>
+    </section>
+    
+
+    
+    <section id="confidence" aria-label="Confidence">
+      <div class="section-h">
+        <h2>Confidence</h2>
+      </div>
+      <p class="section-desc muted">Confidence level assigned to each hypothesis in this report.</p>
+      <article class='card'><p><strong>MYC p.P74S creates a new CDK/MAPK/GSK3-recognized phospho-degron at S74 that functionally competes with canonical MYC MB1 degron control, increasing MYC oncogenic output in aggressive B-cell lymphoma [PMC11340240, OncoKB_P74S, PMID40581078, PMC424394]</strong></p><p>Confidence: <strong>medium</strong></p></article>
+    </section>
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://www.oncokb.org/gene/MYC/P74S' target='_blank' rel='noopener'>Somatic MYC P74S | OncoKB™</a></p><p class='muted'>Knowledgebase entry cataloging MYC p.P74S as a somatic variant with context for tumor types and functional annotations where available.</p><p class='muted' style='margin-top:6px'>ID: <code>OncoKB_P74S</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC11340240/' target='_blank' rel='noopener'>Childhood and Adolescent Relapsed/Refractory Aggressive B-Cell ...</a></p><p class='muted'>Case report/series in aggressive B-cell malignancy; MYC P74S noted in a relapsed/refractory sample; discusses N‑terminal MYC mutations and expression effects.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC11340240</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC7925347/' target='_blank' rel='noopener'>MYC activity inference captures diverse mechanisms of aberrant MYC activity across cancers</a></p><p class='muted'>Computational analysis of MYC activity across cancers; mentions P74S among mutations evaluated for MYC activity states.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC7925347</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://www.uniprot.org/uniprotkb/P01106/entry' target='_blank' rel='noopener'>Myc proto-oncogene protein (Human) – UniProt P01106</a></p><p class='muted'>Curated protein entry describing MYC functions, domains, and regulatory PTMs, including phosphorylation.</p><p class='muted' style='margin-top:6px'>ID: <code>UniProtP01106</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC7358075/' target='_blank' rel='noopener'>The MYC transcription factor network: balancing metabolism, proliferation and oncogenesis</a></p><p class='muted'>Review of the extended MYC/MAX/MLX network, MYC’s roles in metabolism and proliferation, and regulatory mechanisms including PTMs.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC7358075</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC10627926/' target='_blank' rel='noopener'>MYC function and regulation in physiological perspective</a></p><p class='muted'>Review summarizing MYC as a universal transcription amplifier and its roles across physiological processes and disease.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC10627926</code></p></article><article class='card' id='ref-7'><p><strong>[7]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/40581078/' target='_blank' rel='noopener'>EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species</a></p><p class='muted'>Database resource aggregating experimentally supported phosphosites; used here to confirm S73, S77, and S79 in MYC.</p><p class='muted' style='margin-top:6px'>ID: <code>PMID40581078</code></p></article><article class='card' id='ref-8'><p><strong>[8]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC424394/' target='_blank' rel='noopener'>Phosphorylation-dependent degradation of c-Myc is mediated by the F-box protein Fbw7</a></p><p class='muted' style='margin-top:6px'>ID: <code>PMC424394</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>
