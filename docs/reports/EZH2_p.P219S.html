@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EZH2 p.P219S</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>EZH2 p.P219S</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#confidence" target="_self" aria-label="Jump to Confidence">Confidence</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>EZH2</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.P219S</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=Q15910' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/Q15910' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>EZH2 p.P219S (PRO219SER) lies in the N-terminal region of EZH2, a PRC2 methyltransferase that deposits H3K27me3 and is dysregulated in multiple cancers [<a href="#ref-4" class="ref-link" title="EZH2 variants differentially regulate Polycomb Repressive Complex 2">4</a>, <a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>, <a href="#ref-6" class="ref-link" title="Recent update on the development of EZH2 inhibitors and degraders for cancer therapy">6</a>]. The variant introduces a serine at residue 219 adjacent to experimentally reported phosphosites S212 and S220 in human EZH2 per the EPSD resource, suggesting local phosphoregulation potential [<a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites across Eukaryotic Species">7</a>, <a href="#ref-8" class="ref-link" title="Eukaryotic Phosphorylation Sites Database (EPSD) – Browse">8</a>]. EZH2 is known to be regulated by phosphorylation (e.g., AKT at S21 and other cell cycle–regulated sites), supporting plausibility that acquisition of S219 could alter signaling inputs [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>, <a href="#ref-2" class="ref-link" title="MYPT1/PP1-Mediated EZH2 Dephosphorylation at S21">2</a>, <a href="#ref-3" class="ref-link" title="Phosphorylation of the PRC2 component Ezh2 is cell cycle–regulated and up-regulates its binding to ncRNA">3</a>]. No mutation-specific clinical significance was identified for p.P219S in our survey; findings below reflect phosphosite context, solvent accessibility, and kinase-specificity predictions to guide hypothesis generation [<a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>, <a href="#ref-6" class="ref-link" title="Recent update on the development of EZH2 inhibitors and degraders for cancer therapy">6</a>].</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>EZH2 p.P219S creates a novel AKT/SGK-family target site at S219 that functionally decouples PRC2 output (H3K27me3) from growth-factor signaling in hematologic malignancies</h3><p>EZH2 p.P219S introduces a new serine phospho-acceptor at center_pos 219 within the EZH2 N-terminus, creating a local sequence context with predicted gain of AKT1/AKT2/AKT3 specificity and gain of SGK1/SGK3 specificity at S219 (specificity rewiring, not observed phosphorylation) [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>]. Because AKT phosphorylation of EZH2 (e.g., at S21) is known to suppress canonical PRC2 methyltransferase output (H3K27me3), the new predicted AKT/SGK input at S219 is hypothesized to provide an additional signaling-sensitive switch that reduces or reprograms PRC2 repression in response to PI3K–AKT axis activity (directionality must be established by phospho-readouts) [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>, <a href="#ref-2" class="ref-link" title="MYPT1/PP1-Mediated EZH2 Dephosphorylation at S21">2</a>]. In hematologic malignancies where Polycomb/PRC2 programs are central to oncogenic transcriptional states, this added PI3K–AKT-coupled phosphoregulatory node could promote aberrant lineage-state maintenance and proliferation by shifting H3K27me3 distribution and PRC2 target-gene control (to be tested) [<a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>].</p><h4>Disease context</h4><ul><li>Hematologic malignancies where PRC2/EZH2 is therapeutically relevant (e.g., lymphomas, leukemias) [<a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>219</strong></h4><p class='muted'>Mutation creates a new phosphosite at position 219 (S)</p><p class='muted'>Position: <strong>219</strong></p><figure class="card">  <figcaption><strong>219</strong></figcaption>  <pre class="codeblock">
+Positions:  212                                219                                226  
+Wildtype:   S    R    P    P    R    K    F    <span class="mut">P</span>    S    D    K    I    F    E    A    
+Mutant:     S    R    P    P    R    K    F    <span class="mut">S</span>    S    D    K    I    F    E    A    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>SGK1</td><td>0.00%</td><td>89.23%</td><td>+89.23%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>SGK3</td><td>0.00%</td><td>88.11%</td><td>+88.11%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>AKT3</td><td>0.00%</td><td>87.20%</td><td>+87.20%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>AKT1</td><td>0.00%</td><td>86.27%</td><td>+86.27%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div><h4>Predicted observations</h4><ul><li>Targeted phosphoproteomics (or a custom phospho-specific antibody) detects phosphorylation at EZH2 S219 in p.P219S cells but not WT, and the S219 phospho-signal is reduced by AKT-pathway inhibition (e.g., pan-AKT inhibitor) and/or SGK inhibition (directionality: presence/absence and inhibitor sensitivity; abundance changes must be measured, not assumed) [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>].</li><li>Compared with WT EZH2, cells expressing EZH2 p.P219S show altered PRC2 functional output (e.g., changed global H3K27me3 levels and/or redistributed H3K27me3 by ChIP-seq), with the phenotype attenuated by blocking PI3K–AKT signaling (mechanism-discriminating because it ties chromatin output to the predicted AKT-coupled site) [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>, <a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>].</li><li>Epistasis prediction: introducing an S219A substitution in the P219S background (S219A “phospho-null”) reduces the AKT-dependence of the chromatin/phenotype changes relative to P219S alone, indicating S219 is the causal node rather than a generic effect of the P219S substitution [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>].</li></ul><details class='details' open><summary>Laboratory validation</summary><h4>Suggested models</h4><ul><li>Isogenic human hematologic cancer cell line model with CRISPR knock-in of EZH2 P219S (or doxy-inducible EZH2 WT vs P219S in an EZH2-reduced background) [<a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>].</li><li>Optional: PRC2-relevant lymphoma/leukemia models used for EZH2 dependency studies (choose based on feasibility and baseline EZH2 activity) [<a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>].</li></ul><h4>Assays</h4><ul><li>Site-level phospho readout: targeted PRM/SRM mass spectrometry for the S219 phosphopeptide (and neighboring peptides), plus AKT/SGK inhibitor perturbations to test kinase-dependence of the S219 phospho-signal [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>].</li><li>Causal site perturbation: engineer EZH2 constructs/knock-ins WT vs P219S vs P219S+S219A (and optionally P219S+S219D/E as phosphomimetic) and measure H3K27me3 (western blot) and PRC2 occupancy/outputs (CUT&amp;RUN/ChIP-seq for H3K27me3) [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>, <a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>].</li><li>Kinase dependency: pharmacologic or genetic perturbation of AKT (and separately SGK) followed by readouts of S219 phosphorylation, H3K27me3 output, and proliferation/colony formation to test whether P219S creates a new signaling-sensitive dependency [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>, <a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>].</li><li>Epistasis/rescue logic: if P219S phenotypes are suppressed by AKT inhibition, test whether phosphomimetic S219D/E restores the phenotype under AKT inhibition (and whether S219A blocks it), tying kinase→site→chromatin→phenotype [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>].</li></ul><h4>Controls and confounders</h4><ul><li>Control for EZH2 expression level and PRC2 assembly (EZH2–SUZ12/EED co-IP) to distinguish phosphorylation-dependent functional changes from altered stability/complex formation [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>].</li><li>Include measurement of canonical AKT site pS21-EZH2 as a pathway engagement control when using AKT inhibitors, without assuming any coupling between S21 and S219 [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>, <a href="#ref-2" class="ref-link" title="MYPT1/PP1-Mediated EZH2 Dephosphorylation at S21">2</a>].</li><li>Use multiple AKT inhibitors and orthogonal AKT knockdown/knockout to reduce off-target interpretation [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>].</li></ul><h4>Feasibility notes</h4><p class='muted'>S219 is a mutation-created site, so phospho-detection will likely require targeted MS and peptide validation; this is still directly testable because the peptide sequence is defined by the p.P219S allele [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>].</p></details><details class='details' open><summary>Limitations</summary><ul><li>Kinase events are in silico specificity rewiring predictions; actual S219 phosphorylation and the responsible kinase(s) must be empirically established with phospho-site measurements and kinase perturbations [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>].</li><li>AKT precedent is strongest for EZH2 S21; functional consequences of N-terminal phosphorylation are site-specific, so PRC2 output effects at S219 remain a hypothesis until tested [<a href="#ref-1" class="ref-link" title="Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3">1</a>, <a href="#ref-2" class="ref-link" title="MYPT1/PP1-Mediated EZH2 Dephosphorylation at S21">2</a>].</li><li>Disease linkage is gene/pathway-level (PRC2/EZH2 in hematologic malignancies) rather than mutation-specific, as no clinical significance was identified for p.P219S [<a href="#ref-5" class="ref-link" title="Polycomb repressive complexes as therapeutic targets in hematologic malignancies">5</a>].</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><div class='chips'><span class='chip'>EZH2</span><span class='chip'>AKT1</span><span class='chip'>AKT2</span><span class='chip'>AKT3</span><span class='chip'>SGK1</span><span class='chip'>SGK3</span></div><details class='details' open><summary>Group definitions</summary><div><div style='margin-bottom:12px'><strong>Group 1</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lymph node&#x27; and cell_type == &#x27;B cell&#x27; and disease == &#x27;follicular lymphoma&#x27;</li></ul></div><div style='margin-bottom:12px'><strong>Group 2</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lymph node&#x27; and cell_type == &#x27;B cell&#x27; and disease == &#x27;normal&#x27;</li></ul></div></div></details><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>AKT3</td><td>−0.787</td><td>−0.980</td><td>−113.4</td><td>5.61 &times; 10<sup>&minus;3</sup></td><td>3.37 &times; 10<sup>&minus;2</sup></td></tr><tr><td>EZH2</td><td>−0.087</td><td>−0.273</td><td>−24.9</td><td>2.56 &times; 10<sup>&minus;2</sup></td><td>6.25 &times; 10<sup>&minus;2</sup></td></tr><tr><td>SGK1</td><td>−0.094</td><td>−0.257</td><td>−20.3</td><td>3.13 &times; 10<sup>&minus;2</sup></td><td>6.25 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><div class='barrier'>Non-significant (p ≥ 0.05)</div><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>AKT1</td><td>−0.045</td><td>−0.172</td><td>−8.7</td><td>7.27 &times; 10<sup>&minus;2</sup></td><td>1.09 &times; 10<sup>&minus;1</sup></td></tr><tr><td>AKT2</td><td>−0.045</td><td>−0.117</td><td>−4.7</td><td>1.35 &times; 10<sup>&minus;1</sup></td><td>1.35 &times; 10<sup>&minus;1</sup></td></tr><tr><td>SGK3</td><td>−0.024</td><td>−0.102</td><td>−5.0</td><td>1.25 &times; 10<sup>&minus;1</sup></td><td>1.35 &times; 10<sup>&minus;1</sup></td></tr></tbody></table></div><details class='details' open><summary>Interpretation</summary><h5>Context</h5><p>hematologic malignancies with PRC2/EZH2 relevance; primary analysis in lymph node B cells (follicular lymphoma vs normal), with a secondary check in bone marrow plasma cells (myeloma vs normal)</p><h5>Mechanistic expectations</h5><p>EZH2 p.P219S introduces an AKT/SGK phosphorylation site at S219, potentially altering PRC2 repression in response to PI3K–AKT signaling; this is a post-translational mechanism with no clear a priori mRNA direction for EZH2 or AKT/SGK genes</p><h5>Observed results (FL B cells)</h5><ul><li>AKT3 markedly lower in FL (logFC -0.787; effect -0.98; q=0.034)</li><li>EZH2 modestly lower (logFC -0.087; effect -0.273; q=0.063)</li><li>SGK1 modestly lower (logFC -0.094; effect -0.257; q=0.063)</li><li>AKT1/AKT2/SGK3 small, non-significant decreases (q&gt;0.10)</li></ul><h5>Secondary context (myeloma plasma cells)</h5><p>minimal, non-significant shifts for EZH2 and kinases (all q≈0.105), suggesting little mRNA-level change in that setting</p><h5>Alignment assessment</h5><p>Because the hypothesis hinges on a kinase-site gain and PRC2 modulation at the PTM level, mRNA changes of EZH2 or AKT/SGK are not decisive; the coordinated decreases of AKT3, SGK1, and EZH2 mRNA in FL B cells do not provide positive support for an AKT/SGK→EZH2 gain-of-function phosphorylation model and, if anything, trend opposite at the transcript level, but this cannot be taken as contradiction without activity/proteomics data</p><h5>Conclusion</h5><ul><li>VERDICT = UNINFORMATIVE</li><li>Available single-cell mRNA patterns do not directly test the PTM-specific mechanism; modest coordinated downregulation in FL B cells weakly argues against increased kinase-EZH2 coupling at the transcript level but is insufficient for contradiction; confidence low–medium given PTM nature and lack of mutation annotations.</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="confidence" aria-label="Confidence">
+      <div class="section-h">
+        <h2>Confidence</h2>
+      </div>
+      <p class="section-desc muted">Confidence level assigned to each hypothesis in this report.</p>
+      <article class='card'><p><strong>EZH2 p.P219S creates a novel AKT/SGK-family target site at S219 that functionally decouples PRC2 output (H3K27me3) from growth-factor signaling in hematologic malignancies [PMID16224021, ExpHematolPRC2Review2024]</strong></p><p>Confidence: <strong>medium</strong></p></article>
+    </section>
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/16224021/' target='_blank' rel='noopener'>Akt-mediated phosphorylation of EZH2 suppresses methylation of Lys-27 in histone H3</a></p><p class='muted'>Demonstrates that AKT phosphorylates EZH2 at Ser21, reducing H3K27 methyltransferase activity and altering chromatin regulation.</p><p class='muted' style='margin-top:6px'>ID: <code>PMID16224021</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC9108659/' target='_blank' rel='noopener'>MYPT1/PP1-Mediated EZH2 Dephosphorylation at S21</a></p><p class='muted'>Identifies MYPT1/PP1 as a phosphatase complex that dephosphorylates EZH2 at S21, counteracting AKT-mediated phosphorylation.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC9108659</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC2994035/' target='_blank' rel='noopener'>Phosphorylation of the PRC2 component Ezh2 is cell cycle–regulated and up-regulates its binding to ncRNA</a></p><p class='muted'>Describes cell cycle–dependent phosphorylation events on EZH2 and their functional impact on interactions with noncoding RNAs.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC2994035</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC6282306/' target='_blank' rel='noopener'>EZH2 variants differentially regulate Polycomb Repressive Complex 2</a></p><p class='muted'>Shows that EZH2 isoforms/variants modulate PRC2 function and specificity in histone methylation during proliferation and differentiation.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC6282306</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC9216430/' target='_blank' rel='noopener'>Polycomb repressive complexes as therapeutic targets in hematologic malignancies</a></p><p class='muted'>Review of PRC1/PRC2 biology in hematopoiesis and malignancy, therapeutic targeting with EZH2/EZH1 inhibitors and clinical outcomes.</p><p class='muted' style='margin-top:6px'>ID: <code>ExpHematolPRC2Review2024</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/?term=Recent+update+on+the+development+of+EZH2+inhibitors+and+degraders+for+cancer+therapy' target='_blank' rel='noopener'>Recent update on the development of EZH2 inhibitors and degraders for cancer therapy</a></p><p class='muted'>Summarizes advances in EZH2 inhibitors and degraders, mechanisms of action, and clinical development across cancers.</p><p class='muted' style='margin-top:6px'>ID: <code>EurJMedChem2023EZH2Review</code></p></article><article class='card' id='ref-7'><p><strong>[7]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/40581078/' target='_blank' rel='noopener'>EPSD 2.0: An Updated Database of Protein Phosphorylation Sites across Eukaryotic Species</a></p><p class='muted'>Presents EPSD 2.0, a large-scale curated resource of experimentally identified phosphorylation sites and functional annotations.</p><p class='muted' style='margin-top:6px'>ID: <code>PMID40581078</code></p></article><article class='card' id='ref-8'><p><strong>[8]</strong> <a href='http://epsd.biocuckoo.cn/Browse.php' target='_blank' rel='noopener'>Eukaryotic Phosphorylation Sites Database (EPSD) – Browse</a></p><p class='muted'>Web portal to browse experimentally supported phosphorylation sites across eukaryotes; human EZH2 entries include S212 and S220.</p><p class='muted' style='margin-top:6px'>ID: <code>EPSDWebsite2026</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>

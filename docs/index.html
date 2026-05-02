@@ -77,16 +77,28 @@ main { padding: 28px 0 60px; }
 <header>
   <div class="container">
     <h1>🧬 Mutation Reports Viewer</h1>
-    <p class="subtitle">3 genes · 3 mutation reports · AlphaFold 3D structures</p>
+    <p class="subtitle">4 genes · 4 mutation reports · AlphaFold 3D structures</p>
   </div>
 </header>
 <main>
   <div class="container">
     <div class="search-bar">
       <input type="text" id="q" placeholder="Search genes …" autocomplete="off">
-      <span class="stats">3 genes</span>
+      <span class="stats">4 genes</span>
     </div>
     <div class="gene-grid" id="grid">
+        <a href="gene/EZH2/index.html" class="gene-card" data-gene="ezh2">
+          <div class="card-top">
+            <h3>EZH2</h3>
+            <div class="badges"><span class="badge badge-uncategorized">uncategorized</span></div>
+          </div>
+          <p class="summary">EZH2 is a histone methyltransferase that regulates gene expression and is involved in epigenetic silencing.</p>
+          <div class="card-meta">
+            <span class="meta-item"><strong>1</strong> mutation</span>
+            <span class="meta-item struct-yes">✓ structure</span>
+          </div>
+          <div class="positions">pos: 219</div>
+        </a>
         <a href="gene/KDM6A/index.html" class="gene-card" data-gene="kdm6a">
           <div class="card-top">
             <h3>KDM6A</h3>
