@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PLAG1 p.T28S</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>PLAG1 p.T28S</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>PLAG1</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.T28S</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=resolved' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/resolved' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>PLAG1 p.T28S substitutes a threonine with serine at residue 28. Position 28 (T) in human PLAG1 is reported as an experimentally supported phosphosite in EPSD, indicating prior phosphorylation evidence at this site [<a href="#ref-5" class="ref-link" title="EPSD: a well-annotated data resource of protein phosphorylation sites in eukaryotes">5</a>, <a href="#ref-6" class="ref-link" title="Eukaryotic Phosphorylation Site Database (EPSD 2.0)">6</a>]. PLAG1 itself is a proto-oncogenic transcription factor frequently activated by 8q12 translocations in pleomorphic adenoma and implicated in IGF2 upregulation [<a href="#ref-1" class="ref-link" title="PLAG1 gene - NCBI Gene (Gene ID: 5324)">1</a>, <a href="#ref-2" class="ref-link" title="PLAG1 Zinc Finger Protein - OMIM Entry 603026">2</a>, <a href="#ref-3" class="ref-link" title="PLAG1, the Main Translocation Target in Pleomorphic Adenoma of the Salivary Glands">3</a>]. Within the mutation-centered 29-mer, we detected an evidence-supported phosphosite 15-mer window centered on residue 28 that passed solvent-accessibility criteria (within-class S/T change enables continued Ser/Thr kinase targeting).</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>PLAG1 p.T28S rewires PIM1 kinase specificity at the N-terminal phosphosite (center_pos 28), shifting PLAG1-driven oncogenic transcription toward IGF2/PI3K–AKT programs in PLAG1-driven salivary pleomorphic adenoma</h3><p>PLAG1 p.T28S alters the known N-terminal phosphosite at residue 28 (Thr→Ser; center_pos 28) and is predicted to increase kinase–substrate specificity for PIM1 (gain; Δ=0.256) and DYRK3 (gain; Δ=0.320) at the 15-mer window GKRKRGESKPRKNFP, relative to wildtype GKRKRGETKPRKNFP [<a href="#ref-5" class="ref-link" title="EPSD: a well-annotated data resource of protein phosphorylation sites in eukaryotes">5</a>, <a href="#ref-6" class="ref-link" title="Eukaryotic Phosphorylation Site Database (EPSD 2.0)">6</a>]. Because PLAG1 is an oncogenic transcription factor whose tumorigenic output is frequently linked to IGF2 upregulation in PLAG1-driven pleomorphic adenoma, a plausible consequence is that this specificity rewiring changes PLAG1 regulatory state (to be tested by site phospho-occupancy) and biases its transcriptional program toward stronger IGF2-mediated mitogenic signaling (IGF2→IGF1R→PI3K–AKT) in PLAG1-activated salivary tumors [<a href="#ref-1" class="ref-link" title="PLAG1 gene - NCBI Gene (Gene ID: 5324)">1</a>, <a href="#ref-2" class="ref-link" title="PLAG1 Zinc Finger Protein - OMIM Entry 603026">2</a>, <a href="#ref-3" class="ref-link" title="PLAG1, the Main Translocation Target in Pleomorphic Adenoma of the Salivary Glands">3</a>]. This hypothesis is mechanistically testable by determining whether PIM1 dependence emerges for phosphorylation at Ser28 and whether Ser28 phosphorylation state causally tunes PLAG1 target-gene activation and downstream PI3K–AKT pathway markers in relevant models [<a href="#ref-7" class="ref-link" title="PLAG1, the prototype of the PLAG gene family: versatility in tumour development (review).">7</a>].</p><h4>Disease context</h4><ul><li>Pleomorphic adenoma of the salivary gland (PLAG1-rearranged/activated) [<a href="#ref-1" class="ref-link" title="PLAG1 gene - NCBI Gene (Gene ID: 5324)">1</a>, <a href="#ref-3" class="ref-link" title="PLAG1, the Main Translocation Target in Pleomorphic Adenoma of the Salivary Glands">3</a>, <a href="#ref-4" class="ref-link" title="Pathology Outlines - PLAG1">4</a>]</li><li>Other PLAG1-activated tumors with IGF2 involvement (e.g., lipoblastoma, hepatoblastoma) (inference from PLAG1 oncogene versatility) [<a href="#ref-7" class="ref-link" title="PLAG1, the prototype of the PLAG gene family: versatility in tumour development (review).">7</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>28</strong></h4><p class='muted'>Position 28 was a proven phosphosite (T) in the EPSD database before mutation</p><p class='muted'>Position: <strong>28</strong></p><figure class="card">  <figcaption><strong>28</strong></figcaption>  <pre class="codeblock">
+Positions:  21                                 28                                 35   
+Wildtype:   G    K    R    K    R    G    E    <span class="mut">T</span>    K    P    R    K    N    F    P    
+Mutant:     G    K    R    K    R    G    E    <span class="mut">S</span>    K    P    R    K    N    F    P    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>DYRK3</td><td>35.96%</td><td>67.93%</td><td>+31.97%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>PIM1</td><td>37.81%</td><td>63.46%</td><td>+25.65%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><p class='muted'>No differential-expression table was returned for this run.</p></article>
+    </section>
+    
+
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://www.ncbi.nlm.nih.gov/gene/5324' target='_blank' rel='noopener'>PLAG1 gene - NCBI Gene (Gene ID: 5324)</a></p><p class='muted'>Curated gene record for PLAG1 outlining genomic location (8q12), function as a zinc-finger transcription factor, and disease associations including pleomorphic adenoma.</p><p class='muted' style='margin-top:6px'>ID: <code>NCBIGene5324</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://www.omim.org/entry/603026' target='_blank' rel='noopener'>PLAG1 Zinc Finger Protein - OMIM Entry 603026</a></p><p class='muted'>OMIM summary describing PLAG1 as a developmentally regulated transcription factor influencing IGF2 and implicated in tumorigenesis.</p><p class='muted' style='margin-top:6px'>ID: <code>OMIM603026</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://aacrjournals.org/cancerres/article/60/1/106/506251/PLAG1-the-Main-Translocation-Target-in-Pleomorphic' target='_blank' rel='noopener'>PLAG1, the Main Translocation Target in Pleomorphic Adenoma of the Salivary Glands</a></p><p class='muted'>Seminal report showing PLAG1 as a consistent target of translocation/overexpression in pleomorphic adenoma.</p><p class='muted' style='margin-top:6px'>ID: <code>Kas2000CancerRes</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://www.pathologyoutlines.com/topic/stainsplag1.html' target='_blank' rel='noopener'>Pathology Outlines - PLAG1</a></p><p class='muted'>Pathology reference summarizing PLAG1 as a proto-oncogene at 8q12 and its diagnostic relevance in pleomorphic adenoma.</p><p class='muted' style='margin-top:6px'>ID: <code>PathologyOutlinesPLAG1</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://academic.oup.com/nar/article-pdf/32/3/1037/9489921/gkh253.pdf' target='_blank' rel='noopener'>EPSD: a well-annotated data resource of protein phosphorylation sites in eukaryotes</a></p><p class='muted'>Describes the EPSD resource compiling experimentally identified phosphorylation sites and functional annotations across eukaryotes.</p><p class='muted' style='margin-top:6px'>ID: <code>Lin2021BriefBioinform</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://epsd.biocuckoo.cn' target='_blank' rel='noopener'>Eukaryotic Phosphorylation Site Database (EPSD 2.0)</a></p><p class='muted'>Database portal providing experimentally supported phosphorylation sites; used as evidence for PLAG1 Thr28.</p><p class='muted' style='margin-top:6px'>ID: <code>EPSDWebsite</code></p></article><article class='card' id='ref-7'><p><strong>[7]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/20624682/' target='_blank' rel='noopener'>PLAG1, the prototype of the PLAG gene family: versatility in tumour development (review).</a></p><p class='muted' style='margin-top:6px'>ID: <code>PMID</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>
