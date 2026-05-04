@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BCL6 p.N389S</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>BCL6 p.N389S</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#confidence" target="_self" aria-label="Jump to Confidence">Confidence</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>BCL6</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.N389S</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=P41182' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/P41182' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>BCL6 p.N389S (ASN389SER) maps within a serine-rich region and introduces a serine at position 389, creating a potential S/T phospho-acceptor at this site [<a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>]. Within the local 29-mer, we detected an evidence-supported phosphosite at S385 (known in PhosphoSitePlus) and a mutation-created S389 site; both are solvent-accessible by AlphaFold/DSSP-based RSA (≥0.1 within ±3) [<a href="#ref-5" class="ref-link" title="Bcl-6 (human) - PhosphoSitePlus Protein Page">5</a>, <a href="#ref-6" class="ref-link" title="BCL6 Ser385 phosphosite entry">6</a>, <a href="#ref-7" class="ref-link" title="EPSD 2.0: An Updated Database of Protein Phosphorylation Sites">7</a>, <a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>]. BCL6’s role as a GC master regulator implicated in lymphoma underscores the potential regulatory impact of altered phosphorylation in this region [<a href="#ref-1" class="ref-link" title="Breaking bad in the germinal center: how deregulation of BCL6 contributes to lymphomagenesis">1</a>, <a href="#ref-2" class="ref-link" title="BCL6: master regulator of the germinal center reaction">2</a>]. Predicted kinase specificity indicates substantial gains for NEK-family serine/threonine kinases at the S389-gain window (mutant &gt; wildtype) [<a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>].</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>BCL6 p.N389S creates a NEK-family-rewired phospho-switch at S389 that stabilizes BCL6 and sustains GC-like transcriptional repression in DLBCL</h3><p>The BCL6 p.N389S substitution introduces a new serine phospho-acceptor at center_pos 389 within the serine/proline-rich regulatory region of BCL6 [<a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>]. Kinase–substrate specificity modeling predicts a gain of NEK-family recognition at the new S389-centered motif (NEK2/NEK5/NEK6/NEK7/NEK9; direction=gain), implying that the mutant sequence may be more efficiently targeted by these kinases than wild-type in cells where they are active [<a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>]. Because phosphorylation within BCL6’s serine/proline-clustered region is known to couple antigen receptor/MAPK signaling to BCL6 turnover (phosphorylation→degradation axis), a NEK-directed phosphorylation program at S389 is hypothesized to compete with or re-time the established MAPK-linked degradation control, shifting BCL6 toward increased stability and prolonged transcriptional repression in GC-derived lymphomas (prediction requires direct pS389 and BCL6 half-life readouts) [<a href="#ref-1" class="ref-link" title="Breaking bad in the germinal center: how deregulation of BCL6 contributes to lymphomagenesis">1</a>, <a href="#ref-3" class="ref-link" title="Antigen receptor signaling induces MAP kinase–mediated phosphorylation and degradation of BCL-6">3</a>, <a href="#ref-4" class="ref-link" title="BCL-6 is phosphorylated at multiple sites in its serine- and proline-clustered region by MAPK in vivo">4</a>]. This would be disease-relevant in germinal-center–origin lymphomas where sustained BCL6 activity supports the GC-like state and lymphomagenesis [<a href="#ref-1" class="ref-link" title="Breaking bad in the germinal center: how deregulation of BCL6 contributes to lymphomagenesis">1</a>, <a href="#ref-2" class="ref-link" title="BCL6: master regulator of the germinal center reaction">2</a>].</p><h4>Disease context</h4><ul><li>Diffuse large B-cell lymphoma (germinal-center–derived / GC-like programs) [<a href="#ref-1" class="ref-link" title="Breaking bad in the germinal center: how deregulation of BCL6 contributes to lymphomagenesis">1</a>, <a href="#ref-2" class="ref-link" title="BCL6: master regulator of the germinal center reaction">2</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>389</strong></h4><p class='muted'>Mutation creates a new phosphosite at position 389 (S)</p><p class='muted'>Position: <strong>389</strong></p><figure class="card">  <figcaption><strong>389</strong></figcaption>  <pre class="codeblock">
+Positions:  382                                389                                396  
+Wildtype:   V    L    N    S    L    N    Q    <span class="mut">N</span>    A    K    P    E    G    P    E    
+Mutant:     V    L    N    S    L    N    Q    <span class="mut">S</span>    A    K    P    E    G    P    E    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>NEK7</td><td>0.00%</td><td>73.99%</td><td>+73.99%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>NEK6</td><td>0.00%</td><td>68.98%</td><td>+68.98%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>NEK9</td><td>0.00%</td><td>66.20%</td><td>+66.20%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>NEK2</td><td>0.00%</td><td>65.04%</td><td>+65.04%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>NEK5</td><td>0.00%</td><td>60.29%</td><td>+60.29%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div><h4>Predicted observations</h4><ul><li>Targeted phosphoproteomics or phospho-specific antibody detects BCL6 pS389 in p.N389S cells but not WT [<a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>].</li><li>In vitro kinase assays show higher NEK7/NEK6/NEK2 activity toward N389S peptide than WT [<a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>].</li><li>BCL6 p.N389S alters BCL6 half-life/ubiquitination vs WT in a manner correlated with pS389 abundance [<a href="#ref-3" class="ref-link" title="Antigen receptor signaling induces MAP kinase–mediated phosphorylation and degradation of BCL-6">3</a>, <a href="#ref-4" class="ref-link" title="BCL-6 is phosphorylated at multiple sites in its serine- and proline-clustered region by MAPK in vivo">4</a>].</li><li>NEK inhibition/knockdown reduces pS389 and shifts BCL6 abundance/phenotypes preferentially in N389S vs WT [<a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>].</li></ul><details class='details' open><summary>Laboratory validation</summary><h4>Suggested models</h4><ul><li>GC-like DLBCL cell lines with BCL6-WT vs BCL6-N389S (CRISPR knock-in or matched inducible).</li><li>HEK293T or BJAB/Ramos for rapid kinase/turnover assays; confirm in lymphoma models.</li></ul><h4>Assays</h4><ul><li>Targeted MS (PRM) for S389 phosphopeptide; include nearby sites as controls.</li><li>In vitro kinase assays (NEK2/6/7/9) with WT vs N389S peptides (382–396).</li><li>Cycloheximide chase and ubiquitination IP for BCL6 stability.</li><li>Epistasis with N389A/N389D(E) mutants; NEK7 CRISPRi/siRNA ± rescue; MAPK-pathway perturbation comparator.</li></ul><h4>Controls and confounders</h4><ul><li>Match BCL6 expression/localization across conditions.</li><li>Include kinase-dead NEK7 rescue where relevant to parse scaffolding vs catalytic roles.</li><li>Control for cell-cycle effects on NEK-family activity.</li></ul><h4>Feasibility notes</h4><p class='muted'>Targeted MS provides the cleanest initial detection for a mutation-created site (N389S).</p></details><details class='details' open><summary>Limitations</summary><ul><li>NEK-family signals are predicted specificity gains; pS389 must be empirically verified [<a href="#ref-8" class="ref-link" title="This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)">8</a>].</li><li>No direct literature linking NEKs to BCL6 yet; inference leverages BCL6 phospho-turnover biology [<a href="#ref-3" class="ref-link" title="Antigen receptor signaling induces MAP kinase–mediated phosphorylation and degradation of BCL-6">3</a>, <a href="#ref-4" class="ref-link" title="BCL-6 is phosphorylated at multiple sites in its serine- and proline-clustered region by MAPK in vivo">4</a>].</li><li>Functional direction (stabilizing vs destabilizing) requires half-life/ubiquitination assays.</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><div class='chips'><span class='chip'>BCL6</span><span class='chip'>NEK2</span><span class='chip'>NEK5</span><span class='chip'>NEK6</span><span class='chip'>NEK7</span><span class='chip'>NEK9</span></div><details class='details' open><summary>Group definitions</summary><div><div style='margin-bottom:12px'><strong>Group 1</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lymph node&#x27; and disease == &#x27;diffuse large B-cell lymphoma&#x27;</li></ul></div><div style='margin-bottom:12px'><strong>Group 2</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lymph node&#x27; and disease == &#x27;normal&#x27;</li></ul></div></div></details><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>NEK6</td><td>+1.067</td><td>2.828</td><td>133.8</td><td>4.76 &times; 10<sup>&minus;3</sup></td><td>2.07 &times; 10<sup>&minus;2</sup></td></tr><tr><td>BCL6</td><td>+0.638</td><td>1.275</td><td>92.3</td><td>6.89 &times; 10<sup>&minus;3</sup></td><td>2.07 &times; 10<sup>&minus;2</sup></td></tr><tr><td>NEK5</td><td>−0.008</td><td>−0.084</td><td>−54.8</td><td>1.16 &times; 10<sup>&minus;2</sup></td><td>2.32 &times; 10<sup>&minus;2</sup></td></tr><tr><td>NEK2</td><td>+0.069</td><td>0.915</td><td>30.4</td><td>2.09 &times; 10<sup>&minus;2</sup></td><td>2.54 &times; 10<sup>&minus;2</sup></td></tr><tr><td>NEK9</td><td>+0.140</td><td>0.315</td><td>30.1</td><td>2.12 &times; 10<sup>&minus;2</sup></td><td>2.54 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><div class='barrier'>Non-significant (p ≥ 0.05)</div><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>NEK7</td><td>+0.005</td><td>0.008</td><td>1.0</td><td>5.03 &times; 10<sup>&minus;1</sup></td><td>5.03 &times; 10<sup>&minus;1</sup></td></tr></tbody></table></div><details class='details' open><summary>Interpretation</summary><h5>Context</h5><p>Homo sapiens lymph node; comparison = diffuse large B-cell lymphoma vs normal; tissue+disease-only fallback (no cell-type filter).</p><h5>Mechanistic expectations</h5><ul><li>If BCL6 p.N389S stabilizes BCL6 and rewires to NEK2/5/6/7/9, lymphoma samples should show higher BCL6 and increased NEK-family kinase expression, consistent with sustained GC-like repression.</li></ul><h5>Observed results</h5><ul><li>BCL6 up (logFC 0.64, ES 1.27, q 0.021)</li><li>NEK6 strongly up (logFC 1.07, ES 2.83, q 0.021)</li><li>NEK9 up (logFC 0.14, ES 0.31, q 0.025)</li><li>NEK2 small logFC but large ES (0.92), q 0.025</li><li>NEK5 ~no meaningful change (tiny negative ES −0.08 despite q 0.023)</li><li>NEK7 no change (q 0.50).</li></ul><h5>Alignment assessment</h5><ul><li>Multiple hypothesis genes show coordinated, non-trivial increases (BCL6, NEK6, NEK9; NEK2 by ES), matching gain-of-function direction; two family members (NEK5/NEK7) do not increase, but lack of change does not contradict a PTM-centric mechanism</li><li>Effects observed despite broad cell-type mixture, suggesting robust signal in lymphoma context.</li></ul><h5>Conclusion</h5><p>SUPPORTS — scRNA patterns in DLBCL lymph node show BCL6 and key NEKs (notably NEK6/NEK9) upregulated vs normal, consistent with a NEK-rewired, stabilized BCL6 program; confidence = medium (fallback context; PTM mechanism may not fully manifest at mRNA).</p></details></article>
+    </section>
+    
+
+    
+    <section id="confidence" aria-label="Confidence">
+      <div class="section-h">
+        <h2>Confidence</h2>
+      </div>
+      <p class="section-desc muted">Confidence level assigned to each hypothesis in this report.</p>
+      <article class='card'><p><strong>BCL6 p.N389S creates a NEK-family-rewired phospho-switch at S389 that stabilizes BCL6 and sustains GC-like transcriptional repression in DLBCL [PMC4041810, PMID20510734, PMC316953]</strong></p><p>Confidence: <strong>medium</strong></p></article>
+    </section>
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC4041810/' target='_blank' rel='noopener'>Breaking bad in the germinal center: how deregulation of BCL6 contributes to lymphomagenesis</a></p><p class='muted'>Review detailing BCL6 as a master regulator of GC B cells and mechanisms by which its deregulation drives lymphoma.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC4041810</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/20510734/' target='_blank' rel='noopener'>BCL6: master regulator of the germinal center reaction</a></p><p class='muted'>Overview of BCL6 biology in GC reactions and its roles in normal immunity and lymphoma.</p><p class='muted' style='margin-top:6px'>ID: <code>PMID20510734</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC316953/' target='_blank' rel='noopener'>Antigen receptor signaling induces MAP kinase–mediated phosphorylation and degradation of BCL-6</a></p><p class='muted'>Demonstrates BCR/MAPK-driven phosphorylation of BCL-6 (including Ser333/Ser343) and links phosphorylation to protein turnover.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC316953</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/9188861/' target='_blank' rel='noopener'>BCL-6 is phosphorylated at multiple sites in its serine- and proline-clustered region by MAPK in vivo</a></p><p class='muted'>Identifies multiple MAPK-targeted phosphorylation sites in BCL6, supporting regulation via phosphorylation.</p><p class='muted' style='margin-top:6px'>ID: <code>PMID9188861</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://www.phosphosite.org/uniprotAccAction?id=P41182' target='_blank' rel='noopener'>Bcl-6 (human) - PhosphoSitePlus Protein Page</a></p><p class='muted'>Aggregated PTM annotations for human BCL6 including known phosphorylation sites.</p><p class='muted' style='margin-top:6px'>ID: <code>PhosphoSitePlusP41182</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://www.phosphosite.org/siteAction.action?id=56664443' target='_blank' rel='noopener'>BCL6 Ser385 phosphosite entry</a></p><p class='muted'>Site-specific evidence for phosphorylation at BCL6 Ser385 (in vivo MS).</p><p class='muted' style='margin-top:6px'>ID: <code>PhosphoSitePlusSer385</code></p></article><article class='card' id='ref-7'><p><strong>[7]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/40581078/' target='_blank' rel='noopener'>EPSD 2.0: An Updated Database of Protein Phosphorylation Sites</a></p><p class='muted'>Describes the EPSD database containing experimentally validated phosphorylation sites across eukaryotes.</p><p class='muted' style='margin-top:6px'>ID: <code>PMID40581078</code></p></article><article class='card' id='ref-8'><p><strong>[8]</strong> <a href='N/A' target='_blank' rel='noopener'>This analysis (computational phosphosite, solvent accessibility, and kinase-specificity assessment)</a></p><p class='muted'>Internal computational assessment: mutation mapping to UniProt P41182, extraction of 29-mer/15-mer windows, EPSD-backed site checks, AlphaFold/DSSP solvent accessibility, and kinase specificity change scoring.</p><p class='muted' style='margin-top:6px'>ID: <code>ThisWork2026</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>

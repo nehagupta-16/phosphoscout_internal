@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BCL2 p.P59S</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>BCL2 p.P59S</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#confidence" target="_self" aria-label="Jump to Confidence">Confidence</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>BCL2</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.P59S</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=P10415' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/P10415' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>The BCL2 p.P59S variant lies in the flexible loop domain and has been observed in lymphomas [<a href="#ref-6" class="ref-link" title="Somatic BCL2 P59S | OncoKB">6</a>, <a href="#ref-7" class="ref-link" title="Sequence analyses of relapsed or refractory diffuse large B‐cell lymphoma identify recurrent BCL2 P59S/A mutations">7</a>]. This region contains known regulatory phosphosites, including Thr56/Ser70/Ser87 [<a href="#ref-3" class="ref-link" title="Bcl-2 is phosphorylated and inactivated by an ASK1/JNK1 signaling pathway">3</a>, <a href="#ref-4" class="ref-link" title="Phosphorylation of BCL2 at the Ser70 site mediates RANKL-dependent osteoclast survival">4</a>, <a href="#ref-5" class="ref-link" title="Posttranslational modification of Bcl-2 facilitates its proteasome-mediated degradation">5</a>]. Within the analyzed 29-mer, Thr56 is evidence-supported in EPSD and is adjacent to the P59 residue [<a href="#ref-9" class="ref-link" title="EPSD: a well-annotated data resource of protein phosphorylation sites">9</a>]. Our analysis indicates that P59S creates a new serine-centered phosphosite candidate at position 59 near Thr56, with both sites solvent-accessible in structural context.</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>BCL2 p.P59S creates a novel ERN1/IRE1-licensed phospho-switch at Ser59 that strengthens BCL2 pro-survival signaling in DLBCL by coupling UPR stress to mitochondrial apoptosis control</h3><p>The BCL2 p.P59S substitution in the flexible loop domain introduces a new solvent-accessible Ser at center_pos 59 with a predicted ERN1/IRE1 specificity gain. This could couple ER stress/UPR signaling to BCL2’s anti-apoptotic control in lymphoma cells (direction of S59 phosphorylation to be measured) [<a href="#ref-1" class="ref-link" title="The role of BCL-2 family proteins in regulating apoptosis and cancer">1</a>, <a href="#ref-6" class="ref-link" title="Somatic BCL2 P59S | OncoKB">6</a>, <a href="#ref-7" class="ref-link" title="Sequence analyses of relapsed or refractory diffuse large B‐cell lymphoma identify recurrent BCL2 P59S/A mutations">7</a>].</p><h4>Disease context</h4><ul><li>Diffuse large B-cell lymphoma (DLBCL) [<a href="#ref-7" class="ref-link" title="Sequence analyses of relapsed or refractory diffuse large B‐cell lymphoma identify recurrent BCL2 P59S/A mutations">7</a>]</li><li>t(14;18)-positive lymphoma contexts [<a href="#ref-2" class="ref-link" title="Apoptosis of t(14;18)-positive lymphoma cells by a Bcl-2 antisense oligodeoxynucleotide">2</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>59</strong></h4><p class='muted'>Mutation creates a new phosphosite at position 59 (S)</p><p class='muted'>Position: <strong>59</strong></p><figure class="card">  <figcaption><strong>59</strong></figcaption>  <pre class="codeblock">
+Positions:  52                                 59                                 66   
+Wildtype:   Q    P    G    H    T    P    H    <span class="mut">P</span>    A    A    S    R    D    P    V    
+Mutant:     Q    P    G    H    T    P    H    <span class="mut">S</span>    A    A    S    R    D    P    V    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>ERN1</td><td>0.00%</td><td>60.46%</td><td>+60.46%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div><h4>Predicted observations</h4><ul><li>Detect BCL2 Ser59 phosphorylation specifically in P59S cells by targeted LC–MS/MS; modulation with ER stress and ERN1 perturbation.</li><li>ERN1 perturbation reduces S59 phospho-signal and sensitizes P59S cells to apoptosis under ER stress versus WT; site epistasis with S59A/D/E.</li></ul><details class='details' open><summary>Laboratory validation</summary><h4>Suggested models</h4><ul><li>DLBCL cell lines: WT vs P59S isogenic</li></ul><h4>Assays</h4><ul><li>Targeted phosphoproteomics for S59</li><li>ERN1 inhibition/knockdown + apoptosis readouts</li><li>Epistasis: S59A/S59D(E)</li></ul><h4>Controls and confounders</h4><ul><li>Match BCL2 levels/localization</li><li>Verify UPR (XBP1 splicing)</li><li>Monitor S70 as comparator</li></ul><h4>Feasibility notes</h4><p class='muted'>MS-based detection feasible without pS59 antibody</p></details><details class='details' open><summary>Limitations</summary><ul><li>ERN1→BCL2 S59 is predicted; requires direct phospho evidence.</li><li>IRE1 access to BCL2 FLD must be demonstrated in cells.</li><li>FLD has multiple PTM sites; combinatorial effects are possible.</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><div class='chips'><span class='chip'>BCL2</span><span class='chip'>ERN1</span></div><details class='details' open><summary>Group definitions</summary><div><div style='margin-bottom:12px'><strong>Group 1</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lymph node&#x27; and disease == &#x27;diffuse large B-cell lymphoma&#x27;</li></ul></div><div style='margin-bottom:12px'><strong>Group 2</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;lymph node&#x27; and disease == &#x27;normal&#x27;</li></ul></div></div></details><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>ERN1</td><td>−0.185</td><td>−0.290</td><td>−50.5</td><td>1.26 &times; 10<sup>&minus;2</sup></td><td>2.52 &times; 10<sup>&minus;2</sup></td></tr><tr><td>BCL2</td><td>+0.124</td><td>0.147</td><td>17.7</td><td>3.60 &times; 10<sup>&minus;2</sup></td><td>3.60 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><details class='details' open><summary>Interpretation</summary><h5>Context</h5><p>Homo sapiens; lymph node; dLBCL vs normal (fallback)</p><h5>Expectations</h5><p>PTM-centric; presence not direction required</p><h5>Results</h5><p>BCL2 +0.124 (q=0.036), ERN1 -0.185 (q=0.025)</p><p><strong>Verdict:</strong> UNINFORMATIVE</p><p><strong>Confidence:</strong> low</p></details></article>
+    </section>
+    
+
+    
+    <section id="confidence" aria-label="Confidence">
+      <div class="section-h">
+        <h2>Confidence</h2>
+      </div>
+      <p class="section-desc muted">Confidence level assigned to each hypothesis in this report.</p>
+      <article class='card'><p><strong>BCL2 p.P59S creates a novel ERN1/IRE1-licensed phospho-switch at Ser59 that strengthens BCL2 pro-survival signaling in DLBCL by coupling UPR stress to mitochondrial apoptosis control [OncoKB_BCL2_P59S, WileyAJH_DLBCL, PMC9597512]</strong></p><p>Confidence: <strong>medium</strong></p></article>
+    </section>
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC9597512/' target='_blank' rel='noopener'>The role of BCL-2 family proteins in regulating apoptosis and cancer</a></p><p class='muted'>Review detailing mechanisms by which BCL-2 family proteins regulate intrinsic apoptosis and implications in cancer.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC9597512</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC2725288/' target='_blank' rel='noopener'>Apoptosis of t(14;18)-positive lymphoma cells by a Bcl-2 antisense oligodeoxynucleotide</a></p><p class='muted'>Demonstrates the importance of BCL2 overexpression in t(14;18)-positive lymphoma cells and therapeutic targeting.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC2725288</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC84954/' target='_blank' rel='noopener'>Bcl-2 is phosphorylated and inactivated by an ASK1/JNK1 signaling pathway</a></p><p class='muted'>Identifies multiple phosphorylation sites in BCL2’s flexible loop domain (e.g., T69, S70, S87) and links phosphorylation to functional modulation.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC84954</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8858497/' target='_blank' rel='noopener'>Phosphorylation of BCL2 at the Ser70 site mediates RANKL-dependent osteoclast survival</a></p><p class='muted'>Shows that BCL2 Ser70 phosphorylation maintains anti-apoptotic function in osteoclast biology, highlighting regulatory impact of FLD phosphorylation.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC8858497</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC85374/' target='_blank' rel='noopener'>Posttranslational modification of Bcl-2 facilitates its proteasome-mediated degradation</a></p><p class='muted'>Reports phosphorylation-dependent regulation of BCL2 and discusses specific sites including residues in the N-terminal region.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC85374</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://www.oncokb.org/gene/BCL2/P59S' target='_blank' rel='noopener'>Somatic BCL2 P59S | OncoKB</a></p><p class='muted'>Knowledgebase entry indicating BCL2 P59S resides in the flexible loop domain and has been observed in lymphomas.</p><p class='muted' style='margin-top:6px'>ID: <code>OncoKB_BCL2_P59S</code></p></article><article class='card' id='ref-7'><p><strong>[7]</strong> <a href='https://onlinelibrary.wiley.com/doi/full/10.1002/ajh.26835' target='_blank' rel='noopener'>Sequence analyses of relapsed or refractory diffuse large B‐cell lymphoma identify recurrent BCL2 P59S/A mutations</a></p><p class='muted'>Reports recurrent BCL2 P59S/A mutations in DLBCL cohorts, supporting disease association of FLD-position 59 alterations.</p><p class='muted' style='margin-top:6px'>ID: <code>WileyAJH_DLBCL</code></p></article><article class='card' id='ref-8'><p><strong>[8]</strong> <a href='http://media.cellsignal.com/pdf/2875.pdf' target='_blank' rel='noopener'>Phospho-Bcl-2 (Thr56) Antibody #2875 Datasheet</a></p><p class='muted'>Antibody datasheet summarizing evidence for phosphorylation at BCL2 Thr56 among other FLD sites.</p><p class='muted' style='margin-top:6px'>ID: <code>CST2875</code></p></article><article class='card' id='ref-9'><p><strong>[9]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/32008039/' target='_blank' rel='noopener'>EPSD: a well-annotated data resource of protein phosphorylation sites</a></p><p class='muted'>Database resource cataloging experimentally identified eukaryotic phosphorylation sites; used here to corroborate BCL2 phosphosite evidence.</p><p class='muted' style='margin-top:6px'>ID: <code>EPSD2020NAR</code></p></article><article class='card' id='ref-10'><p><strong>[10]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC1489125/' target='_blank' rel='noopener'>Bcl2’s Flexible Loop Domain Regulates p53 Binding and Survival</a></p><p class='muted'>Describes functional roles of the BCL2 flexible loop domain, including interactions influencing apoptosis control.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC1489125</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>
