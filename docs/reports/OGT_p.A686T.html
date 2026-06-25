@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OGT p.A686T</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>OGT p.A686T</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#confidence" target="_self" aria-label="Jump to Confidence">Confidence</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>OGT</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.A686T</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=resolved' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/resolved' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>OGT p.A686T is a missense change within the catalytic domain of O-GlcNAc transferase, an essential enzyme mediating widespread O-GlcNAcylation and implicated in OGT-CDG/XLID when mutated [<a href="#ref-1" class="ref-link" title="Structure of human O-GlcNAc transferase and its complex with a peptide substrate">1</a>, <a href="#ref-2" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">2</a>, <a href="#ref-3" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome">3</a>]. We did not find mutation-specific clinical reports for p.A686T, but residue 686 maps within the human OGT GT-B catalytic core resolved structurally [<a href="#ref-1" class="ref-link" title="Structure of human O-GlcNAc transferase and its complex with a peptide substrate">1</a>]. In our analysis of the local 29-mer, the A→T substitution creates a central threonine phospho-acceptor within an evidence-supported window that is solvent accessible (central ±3), and kinase scoring indicates substantial serine/threonine-kinase specificity increases for BMPR1A/B in this window (computational assessment).</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>OGT A686T creates a BMPR1A/B-rewired phospho-switch at T686 that allosterically reduces OGT catalytic efficiency, contributing to OGT-CDG/XLID via BMP–SMAD neurodevelopmental signaling sensitivity</h3><p>The OGT A686T substitution creates a new solvent-accessible phospho-acceptor at T686 (center_pos 686) within the catalytic GT-B core [<a href="#ref-1" class="ref-link" title="Structure of human O-GlcNAc transferase and its complex with a peptide substrate">1</a>]. Kinase–substrate specificity modeling predicts a gain of BMPR1A and BMPR1B recognition at this new T686 site (gain events), implying that canonical BMP receptor kinases could preferentially phosphorylate OGT at/near T686 under BMP pathway activity (a prediction requiring direct phospho-T686 measurement) [mutation_impact_payload]. Because residue 686 maps within the catalytic domain architecture that supports OGT activity, phosphorylation at T686 is hypothesized to allosterically reduce OGT catalytic efficiency and globally perturb O-GlcNAcylation homeostasis (directionality to be tested biochemically) [<a href="#ref-1" class="ref-link" title="Structure of human O-GlcNAc transferase and its complex with a peptide substrate">1</a>, <a href="#ref-3" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome">3</a>]. In neurodevelopmental settings where BMP–SMAD1/5/8 signaling is active, this creates a context-dependent “BMP-on → OGT-off” coupling that could exacerbate OGT-CDG/XLID phenotypes by further destabilizing O-GlcNAc cycling (prediction) [<a href="#ref-2" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">2</a>, <a href="#ref-4" class="ref-link" title="Intellectual disability-associated disruption of O-GlcNAc cycling impairs habituation learning in Drosophila">4</a>, <a href="#ref-5" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG)">5</a>].</p><h4>Disease context</h4><ul><li>OGT-CDG / X-linked intellectual disability (XLID) [<a href="#ref-2" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">2</a>, <a href="#ref-5" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG)">5</a>]</li><li>Neurodevelopmental learning phenotypes from disrupted O-GlcNAc cycling (model-organism support) [<a href="#ref-4" class="ref-link" title="Intellectual disability-associated disruption of O-GlcNAc cycling impairs habituation learning in Drosophila">4</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>686</strong></h4><p class='muted'>Mutation creates a new phosphosite at position 686 (T)</p><p class='muted'>Position: <strong>686</strong></p><figure class="card">  <figcaption><strong>686</strong></figcaption>  <pre class="codeblock">
+Positions:  679                                686                                693  
+Wildtype:   T    D    Q    E    T    S    P    <span class="mut">A</span>    E    V    A    E    Q    Y    S    
+Mutant:     T    D    Q    E    T    S    P    <span class="mut">T</span>    E    V    A    E    Q    Y    S    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>BMPR1A</td><td>0.00%</td><td>65.51%</td><td>+65.51%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>BMPR1B</td><td>0.00%</td><td>63.96%</td><td>+63.96%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div><h4>Predicted observations</h4><ul><li>A phospho-signal at OGT T686 is detectable specifically (or strongly enriched) in the A686T mutant compared with WT, measured by targeted MS (PRM/SRM) on the 679–693 region or a custom phospho-T686 antibody (direction and stoichiometry to be quantified) [mutation_impact_payload].</li><li>BMP pathway stimulation (e.g., BMP4/BMP7) increases the probability/occupancy of pT686 in A686T cells, and BMPR1A/B inhibition reduces that signal, consistent with predicted BMPR1A/B gain of recognition at T686 (discriminates from generic stress-kinase phosphorylation) [mutation_impact_payload, [<a href="#ref-6" class="ref-link" title="Canonical BMP signaling activates SMAD1/5/8 downstream of BMP type I receptors (BMPR1A/B)">6</a>].</li><li>Compared with WT OGT, A686T shows reduced catalytic activity in vitro when pre-phosphorylated at T686 (or after incubation with active BMPR1A/B kinase domains), with corresponding decreases in global protein O-GlcNAc levels in cells under BMP stimulation (directionality to be directly measured) [<a href="#ref-1" class="ref-link" title="Structure of human O-GlcNAc transferase and its complex with a peptide substrate">1</a>, <a href="#ref-3" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome">3</a>], mutation_impact_payload].</li><li>Neuronal differentiation or synaptic/habituation phenotypes are more sensitive to BMP stimulation in A686T backgrounds, and this sensitivity is reduced by a T686A (phospho-null) rescue in the A686T protein (mechanism-discriminating epistasis tying the phenotype to the new phosphosite) [<a href="#ref-4" class="ref-link" title="Intellectual disability-associated disruption of O-GlcNAc cycling impairs habituation learning in Drosophila">4</a>], mutation_impact_payload].</li></ul><details class='details' open><summary>Laboratory validation</summary><h4>Suggested models</h4><ul><li>HEK293 or neuronal progenitor-like cells engineered to express OGT WT vs A686T at near-endogenous levels (e.g., CRISPR knock-in or rescue in OGT-depleted background) [<a href="#ref-2" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">2</a>].</li><li>iPSC-derived neurons (patient-relevant neurodevelopmental context) with isogenic OGT A686T vs WT [<a href="#ref-5" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG)">5</a>].</li></ul><h4>Assays</h4><ul><li>Targeted phosphoproteomics (PRM/SRM) for the OGT 679–693 peptide to quantify pT686 and non-phospho peptide across conditions (baseline vs BMP ligand; ± BMPR1A/B inhibitor) [mutation_impact_payload, [<a href="#ref-6" class="ref-link" title="Canonical BMP signaling activates SMAD1/5/8 downstream of BMP type I receptors (BMPR1A/B)">6</a>].</li><li>Kinase perturbation: pharmacologic BMP type I receptor inhibition (e.g., ALK2/3/6 inhibitors) and/or BMPR1A/B knockdown/CRISPRi to test dependency of the pT686 signal and downstream effects [<a href="#ref-6" class="ref-link" title="Canonical BMP signaling activates SMAD1/5/8 downstream of BMP type I receptors (BMPR1A/B)">6</a>].</li><li>Site perturbation epistasis: express OGT A686T+T686A (phospho-null) and OGT A686T+T686E (phosphomimetic proxy) in an OGT-replacement system to test causal contribution of the new site to OGT activity and cellular phenotypes [<a href="#ref-1" class="ref-link" title="Structure of human O-GlcNAc transferase and its complex with a peptide substrate">1</a>, <a href="#ref-3" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome">3</a>].</li><li>OGT function readouts: in vitro OGT enzymatic assays (UDP-GlcNAc donor + peptide/protein acceptor), plus cell-level global O-GlcNAc immunoblotting (RL2/CTD110.6) and substrate-specific O-GlcNAc proteomics to quantify directionality [<a href="#ref-3" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome">3</a>].</li><li>Pathway activity controls: measure pSMAD1/5/8 as a BMP pathway activation marker to ensure BMP perturbations are on-target and to separate BMP signaling effects from OGT-specific effects [<a href="#ref-6" class="ref-link" title="Canonical BMP signaling activates SMAD1/5/8 downstream of BMP type I receptors (BMPR1A/B)">6</a>].</li></ul><h4>Controls and confounders</h4><ul><li>Control for expression level/localization of WT vs A686T OGT, since altered stability or mislocalization could mimic catalytic changes [<a href="#ref-3" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome">3</a>].</li><li>Include catalytically impaired OGT control (known active-site mutant) to benchmark the magnitude of any activity loss attributable to T686 phosphorylation vs generic loss-of-function [<a href="#ref-1" class="ref-link" title="Structure of human O-GlcNAc transferase and its complex with a peptide substrate">1</a>].</li><li>Use orthogonal BMP pathway perturbations (ligand vs inhibitor vs receptor knockdown) to avoid attributing off-target inhibitor effects to BMPR1A/B dependence [<a href="#ref-6" class="ref-link" title="Canonical BMP signaling activates SMAD1/5/8 downstream of BMP type I receptors (BMPR1A/B)">6</a>].</li></ul><h4>Feasibility notes</h4><p class='muted'>The core discriminator is epistasis: if BMP stimulation changes phenotype/activity only when the T686 phosphosite is present (A686T) and is abolished by T686A in the A686T background, this supports a causal phospho-switch mechanism rather than generic catalytic destabilization from the missense change alone [mutation_impact_payload, [<a href="#ref-3" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome">3</a>].</p></details><details class='details' open><summary>Limitations</summary><ul><li>BMPR1A/B are typically membrane receptor kinases; whether they (or downstream kinases in BMP signaling) directly phosphorylate cytosolic/nuclear OGT at T686 is uncertain and must be tested with kinase mapping and compartment-specific experiments [<a href="#ref-6" class="ref-link" title="Canonical BMP signaling activates SMAD1/5/8 downstream of BMP type I receptors (BMPR1A/B)">6</a>].</li><li>The kinase-event data indicate predicted specificity rewiring, not actual phosphorylation; pT686 existence and BMP-dependence require direct phospho mapping and quantification [mutation_impact_payload].</li><li>Even if pT686 occurs, the direction of its effect on OGT catalytic activity (inhibitory vs activating) is unknown a priori and must be established using biochemical assays [<a href="#ref-1" class="ref-link" title="Structure of human O-GlcNAc transferase and its complex with a peptide substrate">1</a>, <a href="#ref-3" class="ref-link" title="O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome">3</a>].</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><div class='chips'><span class='chip'>OGT</span><span class='chip'>BMPR1A</span><span class='chip'>BMPR1B</span></div><details class='details' open><summary>Group definitions</summary><div><div style='margin-bottom:12px'><strong>Group 1</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;brain&#x27; and cell_type == &#x27;glutamatergic neuron&#x27; and disease == &#x27;Alzheimer disease&#x27;</li></ul></div><div style='margin-bottom:12px'><strong>Group 2</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;brain&#x27; and cell_type == &#x27;glutamatergic neuron&#x27; and disease == &#x27;normal&#x27;</li></ul></div></div></details><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>OGT</td><td>+0.239</td><td>0.361</td><td>153.9</td><td>4.14 &times; 10<sup>&minus;3</sup></td><td>1.24 &times; 10<sup>&minus;2</sup></td></tr><tr><td>BMPR1A</td><td>−0.064</td><td>−0.085</td><td>−46.8</td><td>1.36 &times; 10<sup>&minus;2</sup></td><td>2.04 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><div class='barrier'>Non-significant (p ≥ 0.05)</div><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>BMPR1B</td><td>+0.007</td><td>0.014</td><td>7.0</td><td>9.10 &times; 10<sup>&minus;2</sup></td><td>9.10 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><details class='details' open><summary>Interpretation</summary><h5>Context</h5><p>brain glutamatergic neurons, Alzheimer disease vs normal</p><h5>Mechanistic expectations</h5><ul><li>Hypothesis proposes a BMP–SMAD-dependent, post-translational phospho-switch on OGT A686T (gain of BMPR1A/B phosphorylation at T686) that reduces OGT catalytic efficiency (“BMP-on → OGT-off”), especially in neurodevelopmental settings</li><li>No explicit prediction for OGT, BMPR1A, or BMPR1B mRNA direction; mechanism is PTM/activity-centric</li></ul><h5>Observed results</h5><ul><li>OGT up in AD neurons (logFC +0.239, d 0.361, q 0.012)</li><li>BMPR1A slightly down (logFC −0.064, d −0.085, q 0.020)</li><li>BMPR1B ~no change (logFC +0.007, d 0.014, q 0.091)</li></ul><h5>Alignment assessment</h5><ul><li>Strong OGT mRNA increase does not by itself indicate higher catalytic activity; PTM effects can decouple from mRNA levels</li><li>Slight BMPR1A decrease and minimal BMPR1B change in neurons do not establish enhanced BMP receptor signaling at the mRNA level; kinase activity cannot be inferred from receptor transcripts alone</li><li>Given the PTM-centric mechanism and adult AD context (not developmental XLID/OGT-CDG), these mRNA shifts neither confirm nor refute the proposed phospho-switch mechanism</li></ul><h5>Conclusion</h5><p>VERDICT: UNINFORMATIVE</p><p><strong>Confidence:</strong> low</p></details></article>
+    </section>
+    
+
+    
+    <section id="confidence" aria-label="Confidence">
+      <div class="section-h">
+        <h2>Confidence</h2>
+      </div>
+      <p class="section-desc muted">Confidence level assigned to each hypothesis in this report.</p>
+      <article class='card'><p><strong>OGT A686T creates a BMPR1A/B-rewired phospho-switch at T686 that allosterically reduces OGT catalytic efficiency, contributing to OGT-CDG/XLID via BMP–SMAD neurodevelopmental signaling sensitivity [EJHG2020OGTReview, Mayfield2024JBC, PMID39059494]</strong></p><p>Confidence: <strong>medium</strong></p></article>
+    </section>
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC3064491' target='_blank' rel='noopener'>Structure of human O-GlcNAc transferase and its complex with a peptide substrate</a></p><p class='muted'>Reports human OGT crystal structures, defining the catalytic GT-B fold and peptide recognition, and delineating domain architecture (TPR and catalytic).</p><p class='muted' style='margin-top:6px'>ID: <code>Lazarus2011Nature</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://www.nature.com/articles/s41431-020-0589-9' target='_blank' rel='noopener'>An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase</a></p><p class='muted'>Review summarizing clinical, genetic, and mechanistic evidence that OGT missense variants cause an X-linked intellectual disability syndrome classified as OGT-CDG.</p><p class='muted' style='margin-top:6px'>ID: <code>EJHG2020OGTReview</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://discovery.dundee.ac.uk/ws/portalfiles/portal/139981176/PIIS0021925824021008.pdf' target='_blank' rel='noopener'>O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG): Potential mechanistic targets revealed by evaluating the OGT interactome</a></p><p class='muted'>Comprehensive review of OGT-CDG phenotypes, biochemical effects of OGT mutations, and potential mechanistic targets based on OGT’s interactome.</p><p class='muted' style='margin-top:6px'>ID: <code>Mayfield2024JBC</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC9140282' target='_blank' rel='noopener'>Intellectual disability-associated disruption of O-GlcNAc cycling impairs habituation learning in Drosophila</a></p><p class='muted'>Model organism study showing that perturbed O-GlcNAc cycling (including OGT manipulation) impairs habituation learning and synaptic development.</p><p class='muted' style='margin-top:6px'>ID: <code>Muha2022PLoSGenet</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/39059494' target='_blank' rel='noopener'>O-GlcNAc transferase congenital disorder of glycosylation (OGT-CDG)</a></p><p class='muted'>Overview of OGT-CDG clinical features and pathophysiology, emphasizing the role of OGT missense variants in XLID.</p><p class='muted' style='margin-top:6px'>ID: <code>PMID39059494</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/' target='_blank' rel='noopener'>Canonical BMP signaling activates SMAD1/5/8 downstream of BMP type I receptors (BMPR1A/B)</a></p><p class='muted' style='margin-top:6px'>ID: <code>query_pubmed_BMP_Smad_general</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>

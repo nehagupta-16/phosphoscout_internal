@@ -164,11 +164,25 @@ header .subtitle { opacity: 0.85; margin-top: 4px; font-size: 1rem; }
           </div>
         </div>
         <div class="panel" style="flex:1; display:flex; flex-direction:column; min-height:0;">
-          <div class="panel-header">Mutations (1)</div>
+          <div class="panel-header">Mutations (3)</div>
           <div class="mut-scroll">
             <table class="mut-table">
               <thead><tr><th>Pos</th><th>Change</th><th>Set</th><th>3D</th><th>Report</th></tr></thead>
               <tbody>
+        <tr class="mut-row" data-pos="648">
+          <td class="pos-cell">648</td>
+          <td><strong>p.N648Y</strong></td>
+          <td><span class="badge badge-uncategorized">uncategorized</span></td>
+          <td class="centered">—</td>
+          <td><a href="../../reports/OGT_p.N648Y.html" target="_blank" class="rpt-link">View Report →</a></td>
+        </tr>
+        <tr class="mut-row" data-pos="686">
+          <td class="pos-cell">686</td>
+          <td><strong>p.A686T</strong></td>
+          <td><span class="badge badge-uncategorized">uncategorized</span></td>
+          <td class="centered">—</td>
+          <td><a href="../../reports/OGT_p.A686T.html" target="_blank" class="rpt-link">View Report →</a></td>
+        </tr>
         <tr class="mut-row" data-pos="765">
           <td class="pos-cell">765</td>
           <td><strong>p.A765T</strong></td>
@@ -187,9 +201,9 @@ header .subtitle { opacity: 0.85; margin-top: 4px; font-size: 1rem; }
 <script>
 const GENE = "OGT";
 const POSITIONS_IN  = [];
-const POSITIONS_OUT = [765];
-const ALL_POSITIONS = [765];
-const POS_REPORTS   = {"765": [{"notation": "p.A765T", "url": "../../reports/OGT_p.A765T.html", "category": "uncategorized"}]};
+const POSITIONS_OUT = [648, 686, 765];
+const ALL_POSITIONS = [648, 686, 765];
+const POS_REPORTS   = {"686": [{"notation": "p.A686T", "url": "../../reports/OGT_p.A686T.html", "category": "uncategorized"}], "765": [{"notation": "p.A765T", "url": "../../reports/OGT_p.A765T.html", "category": "uncategorized"}], "648": [{"notation": "p.N648Y", "url": "../../reports/OGT_p.N648Y.html", "category": "uncategorized"}]};
 const HAS_STRUCT    = false;
 const PDB_URL       = "";
 
