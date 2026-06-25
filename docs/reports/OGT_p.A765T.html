@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OGT p.A765T</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+      --accent:#2563eb; --accent-2:#0ea5e9; --line:#e2e8f0; --chip-bg:#f1f5f9;
+      --link:#2563eb; --link-visited:#6366f1;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);color:white;padding:22px 0;position:relative;overflow:hidden}
+    header .wrap{padding:0 24px;position:relative;z-index:2}
+    h1{margin:0;font-size:clamp(1.35rem, 2.2vw + 1rem, 2.1rem);letter-spacing:-.02em}
+    nav{position:sticky;top:0;background:rgba(248,250,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 24px}
+    nav a{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:700;font-size:.92rem}
+    main{padding:22px 0}
+    section{margin:18px 0 28px 0}
+    .section-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .section-h h2{margin:0;font-size:clamp(1.5rem, 1.8vw + 1rem, 2rem);font-weight:800;letter-spacing:-0.02em}
+    .section-desc{margin-top:0;margin-bottom:16px;font-size:.95rem}
+    h3{font-size:1.15rem;font-weight:700}
+    h4{font-size:1rem;font-weight:600}
+    h5{font-size:0.95rem;font-weight:600}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 14px;box-shadow:0 1px 0 rgba(15,23,42,.03), 0 10px 25px rgba(15,23,42,.05);margin:12px 0}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px 0}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:var(--chip-bg);border:1px solid var(--line);font-weight:800;font-size:.82rem}
+    figure.card{margin:12px 0}
+    figcaption{margin-bottom:8px}
+    .tablewrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:14px}
+    table.table{border-collapse:separate;border-spacing:0;width:100%;min-width:640px;background:var(--card)}
+    .table th, .table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    .table thead th{position:sticky;top:0;background:var(--bg);z-index:1;text-align:left}
+    .table tbody tr:nth-child(odd) td{background:rgba(241,245,249,.65)}
+    .details summary{cursor:pointer;font-weight:900}
+    .ref-link{color:var(--accent);text-decoration:none;font-weight:700}
+    .ref-link:hover{text-decoration:underline}
+    .details h4{margin:.9rem 0 .4rem 0}
+    .details h5{margin:.7rem 0 .35rem 0; font-size: 1.0rem;}
+    .details p{margin:.5rem 0}
+    .details ul {
+      margin: .4rem 0 .8rem 1.2rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+    .details ul ul {
+      margin-top: .3rem;
+      list-style: circle;
+    }
+    .barrier{margin:10px 0;padding:8px 12px;border-radius:10px;background:#0f172a;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.8rem}
+    .codeblock{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;white-space:pre;tab-size:5;line-height:1.35}
+    .codeblock .mut{background:rgba(37,99,235,.15);border-bottom:2px solid var(--accent);font-weight:800}
+
+    /* NEW: Mol* embed */
+    .molstar-frame {
+      width: 100%;
+      height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    @media print {
+      nav{display:none}
+      header{print-color-adjust:exact}
+      a[href]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--muted)}
+      .card{break-inside:avoid}
+      section{break-inside:avoid-page}
+      .molstar-frame{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>OGT p.A765T</h1>
+    </div>
+  </header>
+
+  <nav aria-label="Table of Contents">
+    <div class="wrap">
+      <a href="#overview" target="_self" aria-label="Jump to Overview">Overview</a><a href="#hypotheses" target="_self" aria-label="Jump to Hypotheses">Hypotheses</a><a href="#gene-expression" target="_self" aria-label="Jump to Differential gene expression">Differential gene expression</a><a href="#confidence" target="_self" aria-label="Jump to Confidence">Confidence</a><a href="#references" target="_self" aria-label="Jump to References">References</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="overview" aria-label="Overview">
+      <div class="section-h">
+        <h2>Overview</h2>
+      </div>
+      <p class="section-desc muted">What the variant is and why it's being analyzed</p>
+      <div class='card'><div class="tablewrap"><table class="table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Gene</td><td>OGT</td></tr><tr><td>Mutation (CDS)</td><td></td></tr><tr><td>Mutation (AA)</td><td>p.A765T</td></tr></tbody></table></div></div><figure class='card'><figcaption><strong>Predicted structure (AlphaFold DB / Mol*)</strong></figcaption><iframe class='molstar-frame' src='https://molstar.org/viewer/?afdb=O15294' allow='webgl; fullscreen' allowfullscreen loading='lazy' referrerpolicy='no-referrer' style='border: none;'></iframe><p class='muted' style='margin-top:8px'>If the structure doesn't load, <a href='https://alphafold.ebi.ac.uk/entry/O15294' target='_blank' rel='noopener'>view it here</a>.</p></figure><div class='card'><p>OGT p.Ala765Thr (A765T) is reported among ClinVar submissions for OGT variants [<a href="#ref-4" class="ref-link" title="List of variants in gene OGT reported by Clinical Genetics Laboratory, Skane University Hospital Lund; includes NM_181672.3(OGT):c.2293G&gt;A (p.Ala765Thr)">4</a>]. Pathogenic OGT variants are associated with an X-linked intellectual disability syndrome (OGT-CDG), underscoring the gene’s neurodevelopmental relevance [<a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>, <a href="#ref-3" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">3</a>]. Within the analyzed 29-mer, A765T introduces a threonine-centered, solvent-accessible potential phosphoacceptor site at position 765 supported by phosphorylation-site database analysis [<a href="#ref-6" class="ref-link" title="Eukaryotic Phosphorylation Site Database (EPSD) 2.0">6</a>]. In silico kinase specificity scoring at this site indicates increased recognition probabilities for several serine/threonine kinases (ACVR1B, ACVR2A, ACVR2B, BMPR1A, BMPR1B) in the mutant relative to wildtype [<a href="#ref-8" class="ref-link" title="Computational kinase specificity analysis for OGT A765T (this work)">8</a>].</p></div>
+    </section>
+
+    
+    <section id="hypotheses" aria-label="Hypotheses">
+      <div class="section-h">
+        <h2>Hypotheses</h2>
+      </div>
+      <p class="section-desc muted">Mechanistic explanations generated from the overview and literature.</p>
+      <article class='card'><h3>OGT p.A765T creates a novel T765 phosphosite that is predicted to gain BMP/TGFβ receptor kinase recognition, potentially rewiring OGT regulation to impair neurodevelopment in OGT-CDG</h3><p>OGT p.A765T creates a new, solvent-accessible threonine phosphoacceptor at center_pos 765 (T765) in OGT [<a href="#ref-4" class="ref-link" title="List of variants in gene OGT reported by Clinical Genetics Laboratory, Skane University Hospital Lund; includes NM_181672.3(OGT):c.2293G&gt;A (p.Ala765Thr)">4</a>, <a href="#ref-6" class="ref-link" title="Eukaryotic Phosphorylation Site Database (EPSD) 2.0">6</a>]. Kinase-substrate specificity models predict gain of recognition at T765 by BMP/TGFβ-family receptor kinases ACVR1B, ACVR2A, ACVR2B, BMPR1A, and BMPR1B (gain events) [<a href="#ref-8" class="ref-link" title="Computational kinase specificity analysis for OGT A765T (this work)">8</a>]. This predicted kinase-rewiring could enable context-dependent phosphorylation at OGT T765 (to be tested by site-specific phospho readouts), thereby modulating OGT catalytic output and/or substrate selection, which is central to O-GlcNAc cycling in neurodevelopment [<a href="#ref-1" class="ref-link" title="Protein O-GlcNAc transferase (OGT) – UniProt entry O15294">1</a>, <a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>]. Because OGT-dependent O-GlcNAcylation can antagonize BMP signaling output in vivo (via OGT-mediated O-glycosylation of BMP pathway components), an acquired BMP/TGFβ-kinase input into OGT at T765 could plausibly create a maladaptive feedback between BMP/TGFβ signaling and O-GlcNAc cycling that contributes to neurodevelopmental phenotypes seen in OGT-CDG/X-linked ID [<a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>, <a href="#ref-3" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">3</a>, <a href="#ref-9" class="ref-link" title="O-GlcNAcylation Dampens Dpp/BMP Signaling to Ensure Proper Drosophila Embryonic Development">9</a>].</p><h4>Disease context</h4><ul><li>OGT-CDG / X-linked intellectual disability [<a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>, <a href="#ref-3" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">3</a>, <a href="#ref-5" class="ref-link" title="An OGT Missense Variant With Impaired Enzyme Activity in a Child With OGT-CDG">5</a>]</li></ul><h4>Impacted sites</h4><div class='card' style='margin:10px 0'><h4><strong>765</strong></h4><p class='muted'>Mutation creates a new phosphosite at position 765 (T)</p><p class='muted'>Position: <strong>765</strong></p><figure class="card">  <figcaption><strong>765</strong></figcaption>  <pre class="codeblock">
+Positions:  758                                765                                772  
+Wildtype:   C    P    D    G    G    D    N    <span class="mut">A</span>    D    S    S    N    T    A    L    
+Mutant:     C    P    D    G    G    D    N    <span class="mut">T</span>    D    S    S    N    T    A    L    
+  </pre></figure><div class="tablewrap"><table class="table"><thead><tr><th>Kinase</th><th>WT phosphorylation conf</th><th>Mut phosphorylation conf</th><th>Δ conf</th><th>Direction</th></tr></thead><tbody><tr><td>ACVR2A</td><td>0.00%</td><td>68.58%</td><td>+68.58%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>ACVR2B</td><td>0.00%</td><td>64.78%</td><td>+64.78%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>BMPR1B</td><td>0.00%</td><td>64.21%</td><td>+64.21%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>BMPR1A</td><td>0.00%</td><td>64.05%</td><td>+64.05%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr><tr><td>ACVR1B</td><td>0.00%</td><td>60.11%</td><td>+60.11%</td><td><span style='color:#16a34a;font-weight:700'>gain</span></td></tr></tbody></table></div></div><h4>Predicted observations</h4><ul><li>A765T-expressing cells show detectable phosphorylation at OGT T765 by targeted phosphoproteomics (PRM/SRM) and/or a custom pT765-OGT antibody, with signal increasing upon BMP/TGFβ pathway stimulation (e.g., BMP4 or activin A) and decreasing with ACVR/BMPR kinase inhibition (directionality to be empirically established) [<a href="#ref-8" class="ref-link" title="Computational kinase specificity analysis for OGT A765T (this work)">8</a>, <a href="#ref-9" class="ref-link" title="O-GlcNAcylation Dampens Dpp/BMP Signaling to Ensure Proper Drosophila Embryonic Development">9</a>].</li><li>Compared with WT OGT, A765T cells exhibit altered global O-GlcNAcylation (e.g., RL2/CTD110.6 immunoblot or O-GlcNAc proteomics), and the magnitude of this change is sensitive to ACVR/BMPR kinase perturbation, consistent with a newly introduced kinase-regulated control point [<a href="#ref-1" class="ref-link" title="Protein O-GlcNAc transferase (OGT) – UniProt entry O15294">1</a>, <a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>].</li><li>Mechanism-discriminating: disrupting the new phosphosite (A765T plus T765A reversion) abolishes BMP/activin-dependent changes in OGT functional readouts (global O-GlcNAc, specific neuronal substrate O-GlcNAcylation) without correcting any mutation-independent OGT defects, indicating causality of the phosphorylation node rather than generic missense destabilization [<a href="#ref-1" class="ref-link" title="Protein O-GlcNAc transferase (OGT) – UniProt entry O15294">1</a>, <a href="#ref-8" class="ref-link" title="Computational kinase specificity analysis for OGT A765T (this work)">8</a>].</li></ul><details class='details' open><summary>Laboratory validation</summary><h4>Suggested models</h4><ul><li>Human iPSC-derived neurons engineered to carry OGT A765T and isogenic WT control (CRISPR knock-in) [<a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>].</li><li>Neuroblastoma or HEK293T cells with inducible WT vs A765T OGT for rapid phosphosite and signaling tests [<a href="#ref-1" class="ref-link" title="Protein O-GlcNAc transferase (OGT) – UniProt entry O15294">1</a>].</li></ul><h4>Assays</h4><ul><li>Targeted phosphoproteomics (PRM/SRM) across OGT residues 758–772 to quantify pT765 in WT vs A765T, with and without BMP4/activin A, and with and without ACVR/BMPR inhibitors [<a href="#ref-8" class="ref-link" title="Computational kinase specificity analysis for OGT A765T (this work)">8</a>].</li><li>Generate OGT variants: WT, A765T, A765T+T765A (phospho-null), and A765T+T765E (phosphomimetic proxy) and measure (i) global O-GlcNAc levels and (ii) OGT activity in lysates or purified protein where feasible [<a href="#ref-1" class="ref-link" title="Protein O-GlcNAc transferase (OGT) – UniProt entry O15294">1</a>, <a href="#ref-5" class="ref-link" title="An OGT Missense Variant With Impaired Enzyme Activity in a Child With OGT-CDG">5</a>].</li><li>Kinase dependency test: knockdown/CRISPRi or pharmacologic inhibition of ACVR2A/ACVR2B/BMPR1A/BMPR1B and assess effects on pT765 signal and OGT functional outputs; perform rescue by re-expressing kinase-resistant or WT kinase as appropriate [<a href="#ref-8" class="ref-link" title="Computational kinase specificity analysis for OGT A765T (this work)">8</a>].</li><li>Epistasis/rescue: if A765T phenotypes (neurite outgrowth, synaptic marker expression, neuronal firing) are observed, test whether they are rescued by T765A but not by T765E, and whether BMP/activin pathway inhibition phenocopies T765A specifically in the A765T background [<a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>, <a href="#ref-3" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">3</a>].</li></ul><h4>Controls and confounders</h4><ul><li>Control for OGT protein abundance and stability (cycloheximide chase) to separate phosphorylation-node effects from generic destabilization [<a href="#ref-5" class="ref-link" title="An OGT Missense Variant With Impaired Enzyme Activity in a Child With OGT-CDG">5</a>].</li><li>Control for global changes in cell state due to BMP/TGFβ stimulation by monitoring canonical pathway markers (e.g., pSMAD1/5/9 for BMP; pSMAD2/3 for activin/TGFβ) while interpreting OGT-specific effects [<a href="#ref-9" class="ref-link" title="O-GlcNAcylation Dampens Dpp/BMP Signaling to Ensure Proper Drosophila Embryonic Development">9</a>].</li><li>Include OGA inhibition/perturbation controls to confirm that phenotypes depend on O-GlcNAc cycling rather than unrelated BMP responses [<a href="#ref-1" class="ref-link" title="Protein O-GlcNAc transferase (OGT) – UniProt entry O15294">1</a>, <a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>].</li></ul><h4>Feasibility notes</h4><p class='muted'>Because T765 is newly created by the variant, a custom phospho-specific antibody may be required; targeted MS on the 758–772 peptide provides an orthogonal route to validate site occupancy and stimulus dependence [<a href="#ref-8" class="ref-link" title="Computational kinase specificity analysis for OGT A765T (this work)">8</a>].</p></details><details class='details' open><summary>Limitations</summary><ul><li>Kinase events reflect predicted specificity rewiring; actual phosphorylation of OGT T765 and its directionality under BMP/activin conditions must be experimentally established [<a href="#ref-8" class="ref-link" title="Computational kinase specificity analysis for OGT A765T (this work)">8</a>].</li><li>Human relevance of ACVR/BMPR kinases phosphorylating a cytosolic/nuclear enzyme like OGT is plausible but not guaranteed; subcellular co-localization and kinase accessibility need confirmation [<a href="#ref-1" class="ref-link" title="Protein O-GlcNAc transferase (OGT) – UniProt entry O15294">1</a>].</li><li>The disease link for this exact variant (A765T) is not established in the provided sources beyond registry presence; the hypothesis targets a plausible OGT-CDG mechanism rather than proven pathogenicity of A765T [<a href="#ref-2" class="ref-link" title="The O-GlcNAc cycling in neurodevelopment and associated diseases">2</a>, <a href="#ref-3" class="ref-link" title="An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase">3</a>, <a href="#ref-4" class="ref-link" title="List of variants in gene OGT reported by Clinical Genetics Laboratory, Skane University Hospital Lund; includes NM_181672.3(OGT):c.2293G&gt;A (p.Ala765Thr)">4</a>].</li></ul></details></article>
+    </section>
+    
+
+    
+    <section id="gene-expression" aria-label="Differential gene expression">
+      <div class="section-h">
+        <h2>Differential gene expression</h2>
+      </div>
+      <p class="section-desc muted">Transcriptomic evidence used to support, deprioritize, or refine the hypotheses above (when applicable).</p>
+      <article class='card'><h3>Differential expression</h3><div class='chips'><span class='chip'>OGT</span><span class='chip'>ACVR1B</span><span class='chip'>ACVR2A</span><span class='chip'>ACVR2B</span><span class='chip'>BMPR1A</span><span class='chip'>BMPR1B</span></div><details class='details' open><summary>Group definitions</summary><div><div style='margin-bottom:12px'><strong>Group 1</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;brain&#x27; and cell_type == &#x27;cerebral cortex neuron&#x27; and disease == &#x27;epilepsy&#x27;</li></ul></div><div style='margin-bottom:12px'><strong>Group 2</strong><ul style='margin-top:4px;margin-left:20px;list-style:none'><li style='font-family:monospace'><strong>tissue_general:</strong> &#x27;brain&#x27; and cell_type == &#x27;cerebral cortex neuron&#x27; and disease == &#x27;normal&#x27;</li></ul></div></div></details><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>OGT</td><td>−0.262</td><td>−0.670</td><td>−184.6</td><td>3.45 &times; 10<sup>&minus;3</sup></td><td>2.07 &times; 10<sup>&minus;2</sup></td></tr><tr><td>BMPR1A</td><td>+0.550</td><td>1.720</td><td>70.7</td><td>9.00 &times; 10<sup>&minus;3</sup></td><td>2.70 &times; 10<sup>&minus;2</sup></td></tr><tr><td>ACVR1B</td><td>−0.179</td><td>−0.409</td><td>−39.9</td><td>1.59 &times; 10<sup>&minus;2</sup></td><td>3.10 &times; 10<sup>&minus;2</sup></td></tr><tr><td>ACVR2B</td><td>−0.093</td><td>−0.284</td><td>−30.8</td><td>2.07 &times; 10<sup>&minus;2</sup></td><td>3.10 &times; 10<sup>&minus;2</sup></td></tr><tr><td>ACVR2A</td><td>+0.197</td><td>0.360</td><td>23.9</td><td>2.66 &times; 10<sup>&minus;2</sup></td><td>3.20 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><div class='barrier'>Non-significant (p ≥ 0.05)</div><div class="tablewrap"><table class="table"><thead><tr><th>gene</th><th>log_fold_change</th><th>effect_size</th><th>t_stat</th><th>p_value</th><th>q_value</th></tr></thead><tbody><tr><td>BMPR1B</td><td>+0.028</td><td>0.275</td><td>12.3</td><td>5.15 &times; 10<sup>&minus;2</sup></td><td>5.15 &times; 10<sup>&minus;2</sup></td></tr></tbody></table></div><details class='details' open><summary>Interpretation</summary><h5>Context</h5><p>brain</p><p>cerebral cortex neuron</p><p>epilepsy vs normal (numerator = epilepsy)</p><h5>Mechanistic expectations</h5><p>OGT p.A765T creates a novel T765 phosphosite recognized by TGFβ/BMP receptors (ACVR1B/ACVR2A/ACVR2B/BMPR1A/BMPR1B), leading to context-dependent phosphorylation of OGT and altered O-GlcNAc cycling; the hypothesis is PTM-centric and does not require mRNA up/down but co-upregulation of receptor kinases in neurons could weakly support increased phosphorylation potential</p><h5>Observed results</h5><ul><li>BMPR1A up (logFC 0.55, d 1.72, q 0.027)</li><li>ACVR2A up (logFC 0.20, d 0.36, q 0.032)</li><li>BMPR1B borderline up (logFC 0.03, d 0.28, q 0.051)</li><li>ACVR1B down (logFC -0.18, d -0.41, q 0.031)</li><li>ACVR2B down (logFC -0.09, d -0.28, q 0.031)</li><li>OGT down (logFC -0.26, d -0.67, q 0.021)</li></ul><h5>Alignment assessment</h5><p>Mixed receptor patterns (BMPR1A/ACVR2A up; ACVR1B/ACVR2B down) provide no coherent mRNA-level signature of uniformly increased TGFβ/BMP receptor capacity; OGT is modestly down in epilepsy, which neither confirms nor contradicts a PTM-based gain-of-phosphorylation mechanism; importantly, the disease context (epilepsy) is not OGT-CDG/neurodevelopmental tissue from affected individuals</p><h5>Conclusion</h5><p>UNINFORMATIVE; confidence: low</p></details></article>
+    </section>
+    
+
+    
+    <section id="confidence" aria-label="Confidence">
+      <div class="section-h">
+        <h2>Confidence</h2>
+      </div>
+      <p class="section-desc muted">Confidence level assigned to each hypothesis in this report.</p>
+      <article class='card'><p><strong>OGT p.A765T creates a novel T765 phosphosite that is predicted to gain BMP/TGFβ receptor kinase recognition, potentially rewiring OGT regulation to impair neurodevelopment in OGT-CDG [PMC10462390,Pravata2020EJHG]</strong></p><p>Confidence: <strong>medium</strong></p></article>
+    </section>
+    
+
+    
+    <section id="references" aria-label="References">
+      <div class="section-h">
+        <h2>References</h2>
+      </div>
+      <p class="section-desc muted">Full bibliography for all inline citations in this report.</p>
+      <article class='card' id='ref-1'><p><strong>[1]</strong> <a href='https://www.uniprot.org/uniprotkb/O15294/entry' target='_blank' rel='noopener'>Protein O-GlcNAc transferase (OGT) – UniProt entry O15294</a></p><p class='muted'>UniProt-curated entry describing OGT function, substrates, and roles including effects on transcription and mTORC1 signaling.</p><p class='muted' style='margin-top:6px'>ID: <code>UniProtO15294</code></p></article><article class='card' id='ref-2'><p><strong>[2]</strong> <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC10462390' target='_blank' rel='noopener'>The O-GlcNAc cycling in neurodevelopment and associated diseases</a></p><p class='muted'>Review covering roles of O-GlcNAc in neurodevelopment and the association of OGT variants with X-linked intellectual disability.</p><p class='muted' style='margin-top:6px'>ID: <code>PMC10462390</code></p></article><article class='card' id='ref-3'><p><strong>[3]</strong> <a href='https://www.nature.com/articles/s41431-020-0589-9' target='_blank' rel='noopener'>An intellectual disability syndrome with single-nucleotide variants in O-GlcNAc transferase</a></p><p class='muted'>European Journal of Human Genetics review proposing OGT-CDG and summarizing evidence linking OGT variants to X-linked intellectual disability.</p><p class='muted' style='margin-top:6px'>ID: <code>Pravata2020EJHG</code></p></article><article class='card' id='ref-4'><p><strong>[4]</strong> <a href='https://clinvarminer.genetics.utah.edu/variants-by-submitter/507353/gene/OGT' target='_blank' rel='noopener'>List of variants in gene OGT reported by Clinical Genetics Laboratory, Skane University Hospital Lund; includes NM_181672.3(OGT):c.2293G&gt;A (p.Ala765Thr)</a></p><p class='muted'>ClinVarMiner aggregation showing OGT variants reported by a submitter, including p.Ala765Thr.</p><p class='muted' style='margin-top:6px'>ID: <code>ClinVarMinerOGT_A765T</code></p></article><article class='card' id='ref-5'><p><strong>[5]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/41030119' target='_blank' rel='noopener'>An OGT Missense Variant With Impaired Enzyme Activity in a Child With OGT-CDG</a></p><p class='muted'>Case report describing an OGT missense variant associated with OGT-CDG and reduced enzyme activity.</p><p class='muted' style='margin-top:6px'>ID: <code>PMID41030119</code></p></article><article class='card' id='ref-6'><p><strong>[6]</strong> <a href='https://epsd.biocuckoo.cn' target='_blank' rel='noopener'>Eukaryotic Phosphorylation Site Database (EPSD) 2.0</a></p><p class='muted'>Comprehensive database of experimentally identified phosphorylation sites used as the evidence backbone for phosphosite annotations.</p><p class='muted' style='margin-top:6px'>ID: <code>EPSD2.0</code></p></article><article class='card' id='ref-7'><p><strong>[7]</strong> <a href='https://walkerlab.hms.harvard.edu/ogt2' target='_blank' rel='noopener'>OGT — Walker Lab (structure and domain overview)</a></p><p class='muted'>Overview of OGT structure with TPR and catalytic domains and substrate-binding model.</p><p class='muted' style='margin-top:6px'>ID: <code>WalkerLabOGT</code></p></article><article class='card' id='ref-8'><p><strong>[8]</strong> <a href='internal-analysis' target='_blank' rel='noopener'>Computational kinase specificity analysis for OGT A765T (this work)</a></p><p class='muted'>In silico kinase specificity scoring on 15-mer windows centered at the variant-induced T765 site indicating increased ST-kinase recognition in the mutant.</p><p class='muted' style='margin-top:6px'>ID: <code>PhosphoScout2026</code></p></article><article class='card' id='ref-9'><p><strong>[9]</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/' target='_blank' rel='noopener'>O-GlcNAcylation Dampens Dpp/BMP Signaling to Ensure Proper Drosophila Embryonic Development</a></p><p class='muted' style='margin-top:6px'>ID: <code>DevelopmentalCell2020SxcBMP</code></p></article>
+    </section>
+    
+
+  </main>
+</body>
+</html>
